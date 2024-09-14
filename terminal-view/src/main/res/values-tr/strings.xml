@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_selection_more">Daha Fazla…</string>
+    <string name="copy_text">Kopyalamak</string>
+    <string name="paste_text">Yapıştırmak</string>
+</resources>

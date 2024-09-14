@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+     https://material.io/develop/android/theming/dark
+    -->
+
+    <!-- TermuxActivity DayNight NoActionBar theme. -->
+    <!-- See https://developer.android.com/training/material/theme.html for how to customize the Material theme. -->
+    <!-- NOTE: Cannot use "Light." since it hides the terminal scrollbar on the default black background. -->
+
+    <!-- TermuxApp DayNight DarkActionBar theme. -->
+    <style name="Theme.TermuxApp.DayNight.DarkActionBar" parent="Theme.Material3.DynamicColors.DayNight">
+        <item name="android:navigationBarColor">@color/background_accent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <!-- TermuxApp DayNight NoActionBar theme. -->
+    <style name="Theme.TermuxApp.DayNight.NoActionBar" parent="Theme.TermuxApp.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TermuxActivity.DayNight.NoActionBar" parent="Theme.TermuxApp.DayNight.NoActionBar">
+
+        <!-- Splash screen background -->
+        <item name="android:windowBackground">@color/background_accent</item>
+
+        <!-- Avoid action mode toolbar pushing down terminal content when
+             selecting text on pre-6.0 (non-floating toolbar). -->
+        <item name="android:windowActionModeOverlay">true</item>
+
+        <!-- Transparent Status Bar and NavigationBar -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+        <!-- https://developer.android.com/training/tv/start/start.html#transition-color -->
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+        <!-- Left drawer. -->
+        <item name="buttonBarButtonStyle">@style/TermuxActivity.Drawer.ButtonBarStyle.Dark</item>
+        <item name="termuxActivityDrawerBackground">@color/background_accent</item>
+        <item name="termuxActivityDrawerImageTint">@color/main_accent</item>
+
+        <!-- Extra keys colors. -->
+        <item name="extraKeysButtonTextColor">@color/main_accent</item>
+        <item name="extraKeysButtonActiveTextColor">@color/opposite_accent</item>
+        <item name="extraKeysButtonBackgroundColor">@android:color/transparent</item>
+        <item name="extraKeysButtonActiveBackgroundColor">@color/highlight_accent</item>
+
+    </style>
+
+</resources>

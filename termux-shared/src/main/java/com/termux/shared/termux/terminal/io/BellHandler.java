@@ -7,11 +7,13 @@ import android.os.Looper;
 import android.os.SystemClock;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
-
+import android.os.VibratorManager;
 import com.termux.shared.logger.Logger;
 
 public class BellHandler {
+
     private static BellHandler instance = null;
+
     private static final Object lock = new Object();
 
     private static final String LOG_TAG = "BellHandler";
@@ -20,23 +22,30 @@ public class BellHandler {
         if (instance == null) {
             synchronized (lock) {
                 if (instance == null) {
-                    instance = new BellHandler((Vibrator) context.getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE));
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                        instance = new BellHandler(((VibratorManager) context.getApplicationContext().getSystemService(Context.VIBRATOR_MANAGER_SERVICE)).getDefaultVibrator());
+                    } else {
+                        instance = new BellHandler((Vibrator) context.getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE));
+                    }
                 }
             }
         }
-
         return instance;
     }
 
     private static final long DURATION = 50;
+
     private static final long MIN_PAUSE = 3 * DURATION;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
+
     private long lastBell = 0;
+
     private final Runnable bellRunnable;
 
     private BellHandler(final Vibrator vibrator) {
         bellRunnable = new Runnable() {
+
             @Override
             public void run() {
                 if (vibrator != null) {
@@ -59,7 +68,6 @@ public class BellHandler {
     public synchronized void doBell() {
         long now = now();
         long timeSinceLastBell = now - lastBell;
-
         if (timeSinceLastBell < 0) {
             // there is a next bell pending; don't schedule another one
         } else if (timeSinceLastBell < MIN_PAUSE) {

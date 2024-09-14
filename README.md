@@ -1,99 +1,154 @@
-# Termux application
+<p align="center">
+  <img src="/art/logo_dark.png#gh-dark-mode-only">
+  <img src="/art/logo_light.png#gh-light-mode-only">
+</p>
+<div align="center">
+  <a href="https://github.com/Termux-Monet/termux-monet/actions/workflows/debug_build.yml?query=branch%3Amaster">
+    <img src="https://img.shields.io/github/actions/workflow/status/Termux-Monet/termux-monet/debug_build.yml?branch=master&label=Build&logo=gradle"/>
+  </a>
+  <a href="https://github.com/Termux-Monet/termux-monet/actions/workflows/run_tests.yml?query=branch%3Amaster">
+    <img src="https://img.shields.io/github/actions/workflow/status/Termux-Monet/termux-monet/run_tests.yml?branch=master&label=Test&logo=gradle"/>
+  </a>
+  <a href="https://hosted.weblate.org/engage/termux-monet/">
+    <img src="https://hosted.weblate.org/widgets/termux-monet/-/svg-badge.svg" alt="Translation status" />
+  </a>
+</div>
+<br />
+<div align="center">
+  <a href="https://www.android.com/versions/oreo-8-0/">
+    <img src="https://img.shields.io/static/v1?label=Android&message=8%2B&color=brightgreen&style=flat&logo=android&logoColor=white"/>
+  </a>
+  <a href="https://github.com/Termux-Monet/termux-monet/commits/master">
+    <img src="https://img.shields.io/github/last-commit/Termux-Monet/termux-monet/master?color=informational&label=Updated&logo=github"/>
+  </a>
+  <a href="https://github.com/Termux-Monet/termux-monet/releases">
+    <img src="https://badgen.net/github/tag/Termux-Monet/termux-monet?icon=terminal&color=orange&label=Latest"/>
+  </a>
+  <a href="/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu&label=License"/>
+  </a>
+</div>
+<br />
 
-[![Build status](https://github.com/termux/termux-app/workflows/Build/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Testing status](https://github.com/termux/termux-app/workflows/Unit%20tests/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
-[![Join the Termux discord server](https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2)](https://discord.gg/HXpF69X)
-[![Termux library releases at Jitpack](https://jitpack.io/v/termux/termux-app.svg)](https://jitpack.io/#termux/termux-app)
-
-
-[Termux](https://termux.com) is an Android terminal application and Linux environment.
-
-Note that this repository is for the app itself (the user interface and the terminal emulation). For the packages installable inside the app, see [termux/termux-packages](https://github.com/termux/termux-packages).
-
-Quick how-to about Termux package management is available at [Package Management](https://github.com/termux/termux-packages/wiki/Package-Management). It also has info on how to fix **`repository is under maintenance or down`** errors when running `apt` or `pkg` commands.
-
-**We are looking for Termux Android application maintainers.**
+<p align="center">
+  <img src="/art/screenshot_dark.png#gh-dark-mode-only" height=50%>
+  <img src="/art/screenshot_light.png#gh-light-mode-only" height=50%>
+</p>
 
 ***
 
-**NOTICE: Termux may be unstable on Android 12+.** Android OS will kill any (phantom) processes greater than 32 (limit is for all apps combined) and also kill any processes using excessive CPU. You may get `[Process completed (signal 9) - press Enter]` message in the terminal without actually exiting the shell process yourself. Check the related issue [#2366](https://github.com/termux/termux-app/issues/2366), [issue tracker](https://issuetracker.google.com/u/1/issues/205156966), [phantom cached and empty processes docs](https://github.com/agnostic-apollo/Android-Docs/blob/master/en/docs/apps/processes/phantom-cached-and-empty-processes.md) and [this TLDR comment](https://github.com/termux/termux-app/issues/2366#issuecomment-1237468220) on how to disable trimming of phantom and excessive cpu usage processes. A proper docs page will be added later. An option to disable the killing should be available in Android 12L or 13, so upgrade at your own risk if you are on Android 11, specially if you are not rooted.
+## [Termux-Monet](https://github.com/Termux-Monet/termux-monet) is a discontinued (unmaintained) unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations and Community-made changes.
+This project has been developed on my spare time, for me to learn more about Android development. Dont expect consistency, professionality or stability. Feel free to fork and continue the project, if you want to do so. All the commits have been squashed, for ease of development of the next maintainer.
+**Good luck!**
 
+
+***
+## MONET IS ONLY AVAILABLE ON `ANDROID 12+`!
+#### LOWER VERSIONS WILL DISPLAY A STATIC, BLACK AND WHITE MONET THEME
+***
+
+# Termux-Monet can be updated by using [Obtainium](https://github.com/ImranR98/Obtainium)
+Here's a quick tutorial on how to add it to the app.
+<img src="https://raw.githubusercontent.com/Termux-Monet/termux-monet/master/art/obtainium.png">
 ***
 
 ## Contents
-- [Termux App and Plugins](#termux-app-and-plugins)
-- [Installation](#installation)
-- [Uninstallation](#uninstallation)
-- [Important Links](#important-links)
-- [Debugging](#debugging)
-- [For Maintainers and Contributors](#for-maintainers-and-contributors)
-- [Forking](#forking)
-##
+- [Phantom Process Killer](#Phantom-Process-Killer)
+- [Nightly Releases](#Nightly-Builds)
+- [Wikis](#Wikis)
+- [Miscellaneous](#Miscellaneous)
+- [True italic fonts](#True-italic-fonts)
+- [Displaying images in Termux](#Displaying-images-in-Termux)
+- [Running termux from ADB](#Running-termux-from-ADB)
+- [Debugging](#Debugging)
+- [Disclaimer](#Disclaimer)
+- [Forking Instructions](#Forking)
+- [Special Thanks](#Special-Thanks)
+***
 
+## Termux Monet and Plugins
 
+> The [Termux Monet](https://github.com/Termux-Monet/termux-monet) fork app comes with the following optional modified plugin apps:
+>
+> **These are Modified Plugins. All these repos are Forks from termux-app**
+> - [Termux:Styling](https://github.com/Termux-Monet/termux-styling)
+> - [Termux:API](https://github.com/Termux-Monet/termux-api)
+> - [Termux:Boot](https://github.com/Termux-Monet/termux-boot)
+> - [Termux:Float](https://github.com/Termux-Monet/termux-float)
+> - [Termux:Tasker](https://github.com/Termux-Monet/termux-tasker)
+> - [Termux:Widget](https://github.com/Termux-Monet/termux-widget)
+> - [Termux:GUI](https://github.com/Termux-Monet/termux-gui)
 
-## Termux App and Plugins
+***
 
-The core [Termux](https://github.com/termux/termux-app) app comes with the following optional plugin apps.
+## Phantom Process Killer
 
-- [Termux:API](https://github.com/termux/termux-api)
-- [Termux:Boot](https://github.com/termux/termux-boot)
-- [Termux:Float](https://github.com/termux/termux-float)
-- [Termux:Styling](https://github.com/termux/termux-styling)
-- [Termux:Tasker](https://github.com/termux/termux-tasker)
-- [Termux:Widget](https://github.com/termux/termux-widget)
-##
+**NOTICE:**
+> **Termux may be unstable on Android 12+.** Android OS will kill any (phantom) processes greater than 32 (limit is for all apps combined) and also kill any processes using excessive CPU. You may get `[Process completed (signal 9) - press Enter]` message in the terminal without actually exiting the shell process yourself. Check the related issue [#2366](https://github.com/termux/termux-app/issues/2366), [issue tracker](https://issuetracker.google.com/u/1/issues/205156966), [gist with details](https://gist.github.com/agnostic-apollo/dc7e47991c512755ff26bd2d31e72ca8) and [this TLDR comment](https://github.com/termux/termux-app/issues/2366#issuecomment-1009269410) on how to disable trimming of phantom processes.
 
+#### Deactivation Instructions (ADB):
+- On an ADB console, paste the following commands on the following order:
+```
+adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"
+```
+```
+adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+```
+```
+adb shell settings put global settings_enable_monitor_phantom_procs false
+```
 
+#### Deactivation Instructions (ROOT):
+- On Termux (or any Terminal Emulator), paste the following commands on the following order:
+```
+su -c /system/bin/device_config set_sync_disabled_for_tests persistent
+```
+```
+su -c /system/bin/device_config put activity_manager max_phantom_processes 2147483647
+```
+```
+su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs false
+```
 
-## Installation
+#### Experimental Method (MAGISK)
 
-Latest version is `v0.118.0`.
+- On a Rooted phone with Magisk installed, flash the following module:
 
-**NOTICE: It is highly recommended that you update to `v0.118.0` or higher ASAP for various bug fixes, including a critical world-readable vulnerability reported [here](https://termux.github.io/general/2022/02/15/termux-apps-vulnerability-disclosures.html). See [below](#google-play-store-experimental-branch) for information regarding Termux on Google Play.**
+    > [![](https://img.shields.io/static/v1?message=LetTheGhostsOut.zip&logo=magisk&labelColor=5c5c5c&color=00af9c&logoColor=white&label=%20&style=for-the-badge)](https://raw.githubusercontent.com/Termux-Monet/termux-monet/master/ppr/PhantomProcessRetainer-main.zip)
 
-Termux can be obtained through various sources listed below for **only** Android `>= 7` with full support for apps and packages.
+- After that, `PhantomProcessKiller might be deactivated on every device boot.` Please make an [issue](https://github.com/Termux-Monet/termux-monet/issues) on this repo if the module didn't work for you.
 
-Support for both app and packages was dropped for Android `5` and `6` on [2020-01-01](https://www.reddit.com/r/termux/comments/dnzdbs/end_of_android56_support_on_20200101/) at `v0.83`, however it was re-added just for the app *without any support for package updates* on [2022-05-24](https://github.com/termux/termux-app/pull/2740) via the [GitHub](#github) sources. Check [here](https://github.com/termux/termux-app/wiki/Termux-on-android-5-or-6) for the details.
+#### Check if PhantomProcessKiller was Disabled (ROOT):
+```
+su -c /system/bin/dumpsys activity settings | grep max_phantom_processes
+```
+```
+su -c /system/bin/device_config get activity_manager max_phantom_processes
+```
+- Both commands above should return `2147483647`
 
-The APK files of different sources are signed with different signature keys. The `Termux` app and all its plugins use the same [`sharedUserId`](https://developer.android.com/guide/topics/manifest/manifest-element) `com.termux` and so all their APKs installed on a device must have been signed with the same signature key to work together and so they must all be installed from the same source. Do not attempt to mix them together, i.e do not try to install an app or plugin from `F-Droid` and another one from a different source like `GitHub`. Android Package Manager will also normally not allow installation of APKs with different signatures and you will get errors on installation like `App not installed`, `Failed to install due to an unknown error`, `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, `INSTALL_FAILED_SHARED_USER_INCOMPATIBLE`, `signatures do not match previously installed version`, etc. This restriction can be bypassed with root or with custom roms.
+```
+su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
+```
+- It should return "false"
 
-If you wish to install from a different source, then you must **uninstall any and all existing Termux or its plugin app APKs** from your device first, then install all new APKs from the same new source. Check [Uninstallation](#uninstallation) section for details. You may also want to consider [Backing up Termux](https://wiki.termux.com/wiki/Backing_up_Termux) before the uninstallation so that you can restore it after re-installing from Termux different source.
+***
 
-In the following paragraphs, *"bootstrap"* refers to the minimal packages that are shipped with the `termux-app` itself to start a working shell environment. Its zips are built and released [here](https://github.com/termux/termux-packages/releases).
+## Nightly Builds
 
-### F-Droid
+> Termux-Monet application can be obtained on **GitHub** either from [`GitHub Releases`](https://github.com/Termux-Monet/termux-monet/releases) for **stablier releases** or from [`GitHub Actions`](https://github.com/Termux-Monet/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
 
-Termux application can be obtained from `F-Droid` from [here](https://f-droid.org/en/packages/com.termux/).
+#### Releases (Stablier)
+ - The APKs for `GitHub Releases` will be listed under `Assets` drop-down of a release. These are automatically attached when a new version is released.
 
-You **do not** need to download the `F-Droid` app (via the `Download F-Droid` link) to install Termux. You can download the Termux APK directly from the site by clicking the `Download APK` link at the bottom of each version section.
-
-It usually takes a few days (or even a week or more) for updates to be available on `F-Droid` once an update has been released on `GitHub`. The `F-Droid` releases are built and published by `F-Droid` once they [detect](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/com.termux.yml) a new `GitHub` release. The Termux maintainers **do not** have any control over the building and publishing of the Termux apps on `F-Droid`. Moreover, the Termux maintainers also do not have access to the APK signing keys of `F-Droid` releases, so we cannot release an APK ourselves on `GitHub` that would be compatible with `F-Droid` releases.
-
-The `F-Droid` app often may not notify you of updates and you will manually have to do a pull down swipe action in the `Updates` tab of the app for it to check updates. Make sure battery optimizations are disabled for the app, check https://dontkillmyapp.com/ for details on how to do that.
-
-Only a universal APK is released, which will work on all supported architectures. The APK and bootstrap installation size will be `~180MB`. `F-Droid` does [not support](https://github.com/termux/termux-app/pull/1904) architecture specific APKs.
-
-### GitHub
-
-Termux application can be obtained on `GitHub` either from [`GitHub Releases`](https://github.com/termux/termux-app/releases) for version `>= 0.118.0` or from [`GitHub Build Action`](https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush) workflows. **For android `>= 7`, only install `apt-android-7` variants. For android `5` and `6`, only install `apt-android-5` variants.**
-
-The APKs for `GitHub Releases` will be listed under `Assets` drop-down of a release. These are automatically attached when a new version is released.
-
-The APKs for `GitHub Build` action workflows will be listed under `Artifacts` section of a workflow run. These are created for each commit/push done to the repository and can be used by users who don't want to wait for releases and want to try out the latest features immediately or want to test their pull requests. Note that for action workflows, you need to be [**logged into a `GitHub` account**](https://github.com/login) for the `Artifacts` links to be enabled/clickable. If you are using the [`GitHub` app](https://github.com/mobile), then make sure to open workflow link in a browser like Chrome or Firefox that has your GitHub account logged in since the in-app browser may not be logged in.
-
-The APKs for both of these are [`debuggable`](https://developer.android.com/studio/debug) and are compatible with each other but they are not compatible with other sources.
-
-Both universal and architecture specific APKs are released. The APK and bootstrap installation size will be `~180MB` if using universal and `~120MB` if using architecture specific. Check [here](https://github.com/termux/termux-app/issues/2153) for details.
+#### Nightly (Unstable)
+ - The APKs for `GitHub Actions` will be listed under `Artifacts` section of a workflow run. These are created for each commit/push done to the repository and can be used by users who don't want to wait for releases and want to try out the latest features immediately. Note that for seeing action workflows, you **need** to be [**logged into a `GitHub` account**](https://github.com/login) for the `Artifacts` links to be enabled/clickable. If you are using the [`GitHub` app](https://github.com/mobile), then make sure to open workflow link in a browser like Chrome or Firefox that has your GitHub account logged in since the in-app browser may not be logged in. 
 
 **Security warning**: APK files on GitHub are signed with a test key that has been [shared with community](https://github.com/termux/termux-app/blob/master/app/testkey_untrusted.jks). This IS NOT an official developer key and everyone can use it to generate releases for own testing. Be very careful when using Termux GitHub builds obtained elsewhere except https://github.com/termux/termux-app. Everyone is able to use it to forge a malicious Termux update installable over the GitHub build. Think twice about installing Termux builds distributed via Telegram or other social media. If your device get caught by malware, we will not be able to help you.
 
 The [test key](https://github.com/termux/termux-app/blob/master/app/testkey_untrusted.jks) shall not be used to impersonate @termux and can't be used for this anyway. This key is not trusted by us and it is quite easy to detect its use in user generated content.
 
-<details>
-<summary>Keystore information</summary>
-
+Keystore information:
 ```
 Alias name: alias
 Creation date: Oct 4, 2019
@@ -112,49 +167,65 @@ Subject Public Key Algorithm: 2048-bit RSA key
 Version: 3
 ```
 
-</details>
+***
 
-### Google Play Store **(Experimental branch)**
-
-There is currently a build of Termux available on Google Play for Android 11+ devices, with extensive adjustments in order to pass policy requirements there. This is under development and has missing functionality and bugs (see [here](https://github.com/termux-play-store/) for status updates) compared to the stable F-Droid build, which is why most users who can should still use F-Droid or GitHub build as mentioned above.
-
-Currently, Google Play will try to update installations away from F-Droid ones. Updating will still fail as [sharedUserId](https://developer.android.com/guide/topics/manifest/manifest-element#uid) has been removed. A planned 0.118.1 F-Droid release will fix this by setting a higher version code than used for the PlayStore app. Meanwhile, to prevent Google Play from attempting to download and then fail to install the Google Play releases over existing installations, you can open the Termux apps pages on Google Play and then click on the 3 dots options button in the top right and then disable the Enable auto update toggle. However, the Termux apps updates will still show in the PlayStore app updates list.
-
-If you want to help out with testing the Google Play build (or cannot install Termux from other sources), be aware that it's built from a separate repository (https://github.com/termux-play-store/) - be sure to report issues [there](https://github.com/termux-play-store/termux-issues/issues/new/choose), as any issues encountered might very well be specific to that repository.
-
-## Uninstallation
-
-Uninstallation may be required if a user doesn't want Termux installed in their device anymore or is switching to a different [install source](#installation). You may also want to consider [Backing up Termux](https://wiki.termux.com/wiki/Backing_up_Termux) before the uninstallation.
-
-To uninstall Termux completely, you must uninstall **any and all existing Termux or its plugin app APKs** listed in [Termux App and Plugins](#termux-app-and-plugins).
-
-Go to `Android Settings` -> `Applications` and then look for those apps. You can also use the search feature if it’s available on your device and search `termux` in the applications list.
-
-Even if you think you have not installed any of the plugins, it's strongly suggested to go through the application list in Android settings and double-check.
-##
-
-
-
-## Important Links
-
-### Community
-All community links are available [here](https://wiki.termux.com/wiki/Community).
-
-The main ones are the following.
-
-- [Termux Reddit community](https://reddit.com/r/termux)
-- [Termux User Matrix Channel](https://matrix.to/#/#termux_termux:gitter.im) ([Gitter](https://gitter.im/termux/termux))
-- [Termux Dev Matrix Channel](https://matrix.to/#/#termux_dev:gitter.im) ([Gitter](https://gitter.im/termux/dev))
-- [Termux X (Twitter)](https://twitter.com/termuxdevs)
-- [Termux Support Email](mailto:support@termux.dev)
-
-### Wikis
+## Wikis
 
 - [Termux Wiki](https://wiki.termux.com/wiki/)
 - [Termux App Wiki](https://github.com/termux/termux-app/wiki)
 - [Termux Packages Wiki](https://github.com/termux/termux-packages/wiki)
 
-### Miscellaneous
+***
+
+## True italic fonts
+> As described in https://github.com/termux/termux-app/pull/2829, true italic fonts support can be enabled when placing an italic font in `~/.termux/font-italic.ttf`
+
+***
+
+## Displaying images in Termux
+
+> As described in https://github.com/termux/termux-app/pull/2973, Termux can display images and gifs using sixel and iterm2 protocols.
+
+> For displaying images and gifs using `Sixel`, do `pkg install libsixel` and use `img2sixel image.png`
+
+> For displaying images using `iTerm2`, download the [imgcat](https://iterm2.com/utilities/imgcat) script, and use it with the command `./imgcat image.png`
+
+***
+
+## Dynamic Motd
+
+> As described in [motds: add static motd back and use it as default instead of dynamic motd and add support for custom motd](https://github.com/termux/termux-tools/commit/6a0f5cc138c2c87fef91807fe0244e3531821d4c), in https://github.com/termux/termux-tools/pull/8, and in https://github.com/termux/termux-packages/pull/11250, Termux can now display both standard and dynamic motds.
+
+> For using your own custom dynamic motd, place a `motd.sh` executable file at `~/.termux/`.
+
+> To use the dynamic motd provided by the latest termux-tools package, run `ln -sf $PREFIX/etc/motd.sh ~/.termux/motd.sh`.
+
+***
+
+## Wallpaper support
+> As described in https://github.com/termux/termux-app/pull/3079, Wallpapers can be defined either by placing `background_landscape.jpeg` and `background.jpeg` on `.termux` folder or by selecting the option `Set background image` inside the terminal context menu, under "Appearance".
+> Background image loading can also be enabled/disabled from settings. From Termux Settings -> Termux -> Termux Style -> Background Image.
+
+> An wallpaper overlay color can be defined through `termux.properties`, by using the key `background-overlay-color=#COLOR`. Supported color formats are `#AARRGGBB` and `#RRGGBB`
+
+***
+
+## Running termux from ADB
+> As described in https://github.com/termux/termux-app/pull/1969, it is possible to access Termux directrly from adb shell via run-as. see the following example:
+
+```% adb shell
+dreamlte:/ $ run-as com.termux
+dreamlte:/data/data/com.termux $ PATH=/data/data/com.termux/files/usr/bin LD_PRELOAD=/data/data/com.termux/files/usr/lib/libtermux-exec.so /data/data/com.termux/files/usr/bin/bash -l
+~ $ python
+Python 3.9.2 (default, Feb 22 2021, 12:26:04)
+[Clang 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489 on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+***
+
+## Miscellaneous
 - [FAQ](https://wiki.termux.com/wiki/FAQ)
 - [Termux File System Layout](https://github.com/termux/termux-packages/wiki/Termux-file-system-layout)
 - [Differences From Linux](https://wiki.termux.com/wiki/Differences_from_Linux)
@@ -169,40 +240,9 @@ The main ones are the following.
 - [Running Commands in Termux From Other Apps via `RUN_COMMAND` intent](https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent)
 - [Termux and Android 10](https://github.com/termux/termux-packages/wiki/Termux-and-Android-10)
 
+***
 
-### Terminal
-
-<details>
-<summary></summary>
-
-### Terminal resources
-
-- [XTerm control sequences](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html)
-- [vt100.net](https://vt100.net/)
-- [Terminal codes (ANSI and terminfo equivalents)](https://wiki.bash-hackers.org/scripting/terminalcodes)
-
-### Terminal emulators
-
-- VTE (libvte): Terminal emulator widget for GTK+, mainly used in gnome-terminal. [Source](https://github.com/GNOME/vte), [Open Issues](https://bugzilla.gnome.org/buglist.cgi?quicksearch=product%3A%22vte%22+), and [All (including closed) issues](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&chfield=resolution&chfieldfrom=-2000d&chfieldvalue=FIXED&product=vte&resolution=FIXED).
-
-- iTerm 2: OS X terminal application. [Source](https://github.com/gnachman/iTerm2), [Issues](https://gitlab.com/gnachman/iterm2/issues) and [Documentation](https://iterm2.com/documentation.html) (which includes [iTerm2 proprietary escape codes](https://iterm2.com/documentation-escape-codes.html)).
-
-- Konsole: KDE terminal application. [Source](https://projects.kde.org/projects/kde/applications/konsole/repository), in particular [tests](https://projects.kde.org/projects/kde/applications/konsole/repository/revisions/master/show/tests), [Bugs](https://bugs.kde.org/buglist.cgi?bug_severity=critical&bug_severity=grave&bug_severity=major&bug_severity=crash&bug_severity=normal&bug_severity=minor&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=konsole) and [Wishes](https://bugs.kde.org/buglist.cgi?bug_severity=wishlist&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=konsole).
-
-- hterm: JavaScript terminal implementation from Chromium. [Source](https://github.com/chromium/hterm), including [tests](https://github.com/chromium/hterm/blob/master/js/hterm_vt_tests.js), and [Google group](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-hterm).
-
-- xterm: The grandfather of terminal emulators. [Source](https://invisible-island.net/datafiles/release/xterm.tar.gz).
-
-- Connectbot: Android SSH client. [Source](https://github.com/connectbot/connectbot)
-
-- Android Terminal Emulator: Android terminal app which Termux terminal handling is based on. Inactive. [Source](https://github.com/jackpal/Android-Terminal-Emulator).
-</details>
-
-##
-
-
-
-### Debugging
+## Debugging
 
 You can help debug problems of the `Termux` app and its plugins by setting appropriate `logcat` `Log Level` in `Termux` app settings -> `<APP_NAME>` -> `Debugging` -> `Log Level` (Requires `Termux` app version `>= 0.118.0`). The `Log Level` defaults to `Normal` and log level `Verbose` currently logs additional information. Its best to revert log level to `Normal` after you have finished debugging since private data may otherwise be passed to `logcat` during normal operation and moreover, additional logging increases execution time.
 
@@ -222,45 +262,51 @@ Users must post complete report (optionally without sensitive info) when reporti
 - `Verbose` - Start logging verbose messages.
 ##
 
+***
 
+## Disclaimer
+> There's no termux monet official groups other than github.com/termux-monet. If you see any Telegram or Threads group, that's not made by me! Any group that's not mentioned in this README.md is not official.
 
-## For Maintainers and Contributors
+> Do not report issues occurred in Termux Monet on termux-app repo, unless you're completely certain that this problem is also present in the regular Termux App.
+>
+> By installing this app, you agree that you're aware of its unstableness.
+> 
+> I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because Termux didn't load. Please do some research if you have any concerns about features and code included in this forked App before installing it! YOU are choosing to replace your Termux app with this one, and if you point the finger at me for messing up your terminal and device, I will laugh at you.
+>
+> Usage of Termux for attacking/hacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
-The [termux-shared](termux-shared) library was added in [`v0.109`](https://github.com/termux/termux-app/releases/tag/v0.109). It defines shared constants and utils of the Termux app and its plugins. It was created to allow for the removal of all hardcoded paths in the Termux app. Some of the termux plugins are using this as well and rest will in future. If you are contributing code that is using a constant or a util that may be shared, then define it in `termux-shared` library if it currently doesn't exist and reference it from there. Update the relevant changelogs as well. Pull requests using hardcoded values **will/should not** be accepted. Termux app and plugin specific classes must be added under `com.termux.shared.termux` package and general classes outside it. The [`termux-shared` `LICENSE`](termux-shared/LICENSE.md) must also be checked and updated if necessary when contributing code. The licenses of any external library or code must be honoured.
-
-The main Termux constants are defined by [`TermuxConstants`](https://github.com/termux/termux-app/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) class. It also contains information on how to fork Termux or build it with your own package name. Changing the package name will require building the bootstrap zip packages and other packages with the new `$PREFIX`, check [Building Packages](https://github.com/termux/termux-packages/wiki/Building-packages) for more info.
-
-Check [Termux Libraries](https://github.com/termux/termux-app/wiki/Termux-Libraries) for how to import termux libraries in plugin apps and [Forking and Local Development](https://github.com/termux/termux-app/wiki/Termux-Libraries#forking-and-local-development) for how to update termux libraries for plugins.
-
-The `versionName` in `build.gradle` files of Termux and its plugin apps must follow the [semantic version `2.0.0` spec](https://semver.org/spec/v2.0.0.html) in the format `major.minor.patch(-prerelease)(+buildmetadata)`. When bumping `versionName` in `build.gradle` files and when creating a tag for new releases on GitHub, make sure to include the patch number as well, like `v0.1.0` instead of just `v0.1`. The `build.gradle` files and `attach_debug_apks_to_release` workflow validates the version as well and the build/attachment will fail if `versionName` does not follow the spec.
-
-### Commit Messages Guidelines
-
-Commit messages **must** use the [Conventional Commits](https://www.conventionalcommits.org) spec so that chagelogs as per the [Keep a Changelog](https://github.com/olivierlacan/keep-a-changelog) spec can automatically be generated by the [`create-conventional-changelog`](https://github.com/termux/create-conventional-changelog) script, check its repo for further details on the spec. **The first letter for `type` and `description` must be capital and description should be in the present tense.** The space after the colon `:` is necessary. For a breaking change, add an exclamation mark `!` before the colon `:`, so that it is highlighted in the chagelog automatically.
-
-```
-<type>[optional scope]: <description>
-
-[optional body]
-
-[optional footer(s)]
-```
-
-**Only the `types` listed below must be used exactly as they are used in the changelog headings.** For example, `Added: Add foo`, `Added|Fixed: Add foo and fix bar`, `Changed!: Change baz as a breaking change`, etc. You can optionally add a scope as well, like `Fixed(terminal): Fix some bug`. **Do not use anything else as type, like `add` instead of `Added`, etc.**
-
-- **Added** for new features.
-- **Changed** for changes in existing functionality.
-- **Deprecated** for soon-to-be removed features.
-- **Removed** for now removed features.
-- **Fixed** for any bug fixes.
-- **Security** in case of vulnerabilities.
-##
-
-
+***
 
 ## Forking
 
-- Check [`TermuxConstants`](https://github.com/termux/termux-app/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
+- Check [`TermuxConstants`](https://github.com/Termux-Monet/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
+- Keep targetSdk 28 to avoid login error `not exec("/data/data/com.termux/files/usr/bin/login"): Permission denied`.
 - You also need to recompile bootstrap zip for the new package name. Check [building bootstrap](https://github.com/termux/termux-packages/wiki/For-maintainers#build-bootstrap-archives), [here](https://github.com/termux/termux-app/issues/1983) and [here](https://github.com/termux/termux-app/issues/2081#issuecomment-865280111).
 - Currently, not all plugins use `TermuxConstants` from `termux-shared` library and have hardcoded `com.termux` values and will need to be manually patched.
-- If forking termux plugins, check [Forking and Local Development](https://github.com/termux/termux-app/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
+- If forking termux plugins, check [Forking and Local Development](https://github.com/Termux-Monet/termux-monet/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
+- Enable GitHub actions and do any commit to build termux. e.g. upload a placeholder file.
+- Create empty releases. You don't need to manually upload termux apks, GitHub Actions will do all the job for you.
+
+## Special Thanks
+
+- Thanks for [Android Repository](https://t.me/AndroidRepo) and [MódulOS.tk](https://t.me/moduloyappstk) for sharing and supporting the project!
+- Thanks for [Termux](https://github.com/termux/termux-app) for creating this incredible app!
+
+***
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/Termux-Monet/termux-monet/master/art/ic_monet_dark.svg#gh-dark-mode-only" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/Termux-Monet/termux-monet/master/art/ic_monet_light.svg#gh-light-mode-only" width=50% height=50%>
+</p>
+
+<div align="center">
+  <a href="https://github.com/Termux-Monet/termux-monet/releases">
+    <img src="https://img.shields.io/github/downloads/Termux-Monet/termux-monet/total?color=brightgreen&label=Downloads"/>
+  </a>
+  <a href="https://github.com/Termux-Monet/termux-monet/releases">
+    <img src="https://badgen.net/github/assets-dl/Termux-Monet/termux-monet?label=Updates"/>
+  </a>
+  <a href="https://github.com/Termux-Monet/termux-monet/forks?activity_threshold=5y&include=active%2Carchived%2Cinactive&page=1&sort_by=last_updated">
+    <img src="https://img.shields.io/github/forks/Termux-Monet/termux-monet?style=social"/>
+  </a>
+</div>

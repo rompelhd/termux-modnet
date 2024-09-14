@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TermuxAlertDialogStyle" parent="@style/ThemeOverlay.Material3.Dialog.Alert">
+    </style>
+
+    <style name="TermuxActivity.Drawer.ButtonBarStyle.Light" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/highlight_accent</item>
+    </style>
+
+    <style name="TermuxActivity.Drawer.ButtonBarStyle.Dark" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/main_accent</item>
+    </style>
+
+</resources>

@@ -1,24 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <!--
-        Updated notification icon compliant with system icons guidelines
-        https://material.io/design/iconography/system-icons.html
-    -->
+    android:width="400dp"
+    android:height="400dp"
+    android:viewportWidth="400"
+    android:viewportHeight="400">
 
-    <group>
-        <clip-path
-            android:pathData="M0,0h24v24h-24z"/>
-
-        <path
-            android:pathData="M5,4H2L8,12L2,20H5L11,12L5,4Z"
-            android:fillColor="#ffffff"/>
-
-        <path
-            android:pathData="M13,18H22V20H13V18Z"
-            android:fillColor="#ffffff"/>
-
-    </group>
+    <path
+        android:fillColor="@color/icon_accent"
+        android:pathData="M108,142 L166,200 L108,258 L51,315 L77,315 L103,315 L161,258 L217,200 L161,142 L103,85 L77,85 L51,85 L108,142 M220,295 L220,315 L285,315 L349,315 L349,295 L349,276 L285,276 L220,276 L220,295" />
 </vector>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
+<resources>
+    <string name="application_name">&TERMUX_APP_NAME;</string>
+    <string name="shared_user_label">&TERMUX_APP_NAME; felhasználó</string>
+    <!-- Termux RUN_COMMAND permission -->
+    <string name="permission_run_command_label">Parancsok futtatása &TERMUX_APP_NAME; környezetben</string>
+    <string name="permission_run_command_description">tetszőleges parancsok végrehajtása a &TERMUX_APP_NAME;
+        környezettel és hozzáférés a fájlokhoz</string>
+    <!-- Termux Bootstrap Packages Installation -->
+    <string name="bootstrap_installer_body">Bootstrap csomagok telepítése…</string>
+    <string name="bootstrap_error_title">Nem lehet telepíteni bootstrapet</string>
+    <string name="bootstrap_error_body">&TERMUX_APP_NAME; nem tudta telepíteni a bootstrap csomagokat.</string>
+    <string name="bootstrap_error_abort">Megszakítás</string>
+    <string name="bootstrap_error_try_again">Próbáld újra</string>
+    <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; csak elsődleges felhasználóként futtatható.
+\nBootstrap binárisok, amelyeket a következőhöz állítottak össze: &TERMUX_APP_NAME; kódolt $PREFIX elérési úttal rendelkeznek, és nem telepíthetők bármely más útvonalon, kivéve:
+\n%1$s.</string>
+    <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; nem lehet installálni hordozható/külső/eltávolítható sd kártyáról az eszközén.
+\nBootstrap binárisok, amelyeket a következőkhöz állítottak össze: &TERMUX_APP_NAME; kódolt $PREFIX elérési úttal rendelkeznek, és nem telepíthetők bármely más útvonalon, kivéve:
+\n%1$s.</string>
+    <!-- Terminal Sidebar and Shortcuts -->
+    <string name="action_new_session">Új munkamenet</string>
+    <string name="action_new_session_failsafe">Failsafe</string>
+    <string name="title_max_terminals_reached">Elérte a terminálok maximális számát</string>
+    <string name="msg_max_terminals_reached">Zárja be a meglévőket, mielőtt újat hozna létre.</string>
+    <string name="title_rename_session">Munkamenet nevének beállítása</string>
+    <string name="action_rename_session_confirm">Beállítás</string>
+    <string name="title_create_named_session">Új elnevezett munkamenet</string>
+    <string name="action_create_named_session_confirm">Létrehozás</string>
+    <string name="action_toggle_soft_keyboard">Billentyűzet</string>
+    <string name="msg_enabling_terminal_toolbar">A Terminál eszköztár engedélyezése</string>
+    <string name="msg_disabling_terminal_toolbar">A Terminál eszköztár letiltása</string>
+    <!-- Terminal Popup -->
+    <string name="action_select_url">URL kiválasztása</string>
+    <string name="title_select_url_dialog">Koppintson az URL-re a másoláshoz, vagy nyomja hosszan a megnyitásához</string>
+    <string name="title_select_url_none_found">Nem található URL a terminálban.</string>
+    <string name="msg_select_url_copied_to_clipboard">URL a vágólapra másolva</string>
+    <string name="action_share_transcript">Átirat megosztása</string>
+    <string name="title_share_transcript">Terminál átirata</string>
+    <string name="title_share_transcript_with">Átirat küldése ide:</string>
+    <string name="action_share_selected_text">Kiválasztott szöveg megosztása</string>
+    <string name="title_share_selected_text">Terminál szövege</string>
+    <string name="title_share_selected_text_with">A kijelölt szöveg küldése ide:</string>
+    <string name="action_autofill_password">Jelszó automatikus kitöltése</string>
+    <string name="action_reset_terminal">Visszaállítás</string>
+    <string name="msg_terminal_reset">Terminál visszaállítása</string>
+    <string name="action_kill_process">Folyamat leállítása (%d)</string>
+    <string name="title_confirm_kill_process">Tényleg leállítja ezt a munkamenetet\?</string>
+    <string name="action_style_terminal">Stílus</string>
+    <string name="action_toggle_keep_screen_on">Képernyő bekapcsolva tartása</string>
+    <string name="action_open_help">Segítség</string>
+    <string name="action_open_settings">Beállítások</string>
+    <string name="action_report_issue">Hibajelentés</string>
+    <string name="msg_generating_report">Jelentés Generálása</string>
+    <string name="msg_add_termux_debug_info">Hozzá ad &TERMUX_APP_NAME; hibakeresési információkat a jelentéshez\?</string>
+    <string name="error_styling_not_installed">A &TERMUX_STYLING_APP_NAME; Bővítmény App nincs telepítve.</string>
+    <string name="action_styling_install">Telepítés</string>
+    <!-- Termux Notifications -->
+    <string name="notification_action_exit">Kilépés</string>
+    <string name="notification_action_wake_lock">Wakelock megszerzése</string>
+    <string name="notification_action_wake_unlock">Wakelock feloldása</string>
+    <!-- TermuxService -->
+    <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME;-nak szüksége van \"Megjelenítés más alkalmazások felett\" engedélyre a terminál munkamenetek háttérben történő futtatásához Android &gt;= 10 rendszereken. Ezt meg lehet adni a Beállítások -&gt; alkalmazások -&gt; &TERMUX_APP_NAME; -&gt; Haladó</string>
+    <string name="error_termux_service_invalid_execution_command_runner">Érvénytelen végrehajtási parancsfuttató a TermuxService-hez: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_runner">Nem támogatott végrehajtási parancsfuttató a TermuxService-hez: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Nem támogatott végrehajtási parancshéj létrehozási módja TermuxService: `%1$s`</string>
+    <string name="error_termux_service_execution_command_shell_name_unset">A rendszerhéj neve nincs beállítva, de a `%1$s` rendszerhéj létrehozási módja átment</string>
+    <!-- Termux RunCommandService -->
+    <string name="error_run_command_service_invalid_intent_action">Érvénytelen szándékkal kapcsolatos művelet a RunCommandService-hez: `%1$s`</string>
+    <string name="error_run_command_service_invalid_execution_command_runner">Érvénytelen végrehajtási parancs futtatója a RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_mandatory_extra_missing">Kötelező extra hiányzik a RunCommandService-ből: \"%1$s\"</string>
+    <string name="error_run_command_service_api_help">Látogasd meg %1$s a RUN_COMMAND szándék használatával kapcsolatos további információkért.</string>
+    <!-- Termux File Receiver -->
+    <string name="title_file_received">Fájl mentése ide: ~/downloads/</string>
+    <string name="action_file_received_edit">Szerkesztés</string>
+    <string name="action_file_received_open_directory">Könyvtár megnyitása</string>
+    <!-- Miscellaneous -->
+    <string name="error_termux_service_start_failed_general">Nem sikerült elindítani a TermuxService szolgáltatást. Tekintse meg a logcatben a hibaüzenetet.</string>
+    <string name="error_termux_service_start_failed_bg">Nem sikerült elindítani a TermuxService-t, miközben az alkalmazás a háttérben van az Android háttér korlátozásai miatt.</string>
+    <!-- Termux Settings -->
+    <string name="title_activity_termux_settings">&TERMUX_APP_NAME; Beállítások</string>
+    <!-- Termux App Preferences -->
+    <string name="termux_preferences_title">&TERMUX_APP_NAME;</string>
+    <string name="termux_preferences_summary">Beállítások a &TERMUX_APP_NAME; alkalmazáshoz</string>
+    <!-- Debugging Preferences -->
+    <string name="termux_debugging_preferences_title">Debugolás</string>
+    <string name="termux_debugging_preferences_summary">Debugolási beállítások</string>
+    <!-- Logging Category -->
+    <string name="termux_logging_header">Logolás</string>
+    <!-- Log Level -->
+    <string name="termux_log_level_title">Log Szint</string>
+    <!-- Terminal View Key Logging -->
+    <string name="termux_terminal_view_key_logging_enabled_title">Terminálnézeti Kulcs Naplózása</string>
+    <string name="termux_terminal_view_key_logging_enabled_off">A naplók nem tartalmaznak bejegyzéseket a terminálnézet kulcsokhoz. (Alapértelmezett)</string>
+    <string name="termux_terminal_view_key_logging_enabled_on">A Logcat-naplók bejegyzéseket tartalmaznak a terminálnézeti kulcsokhoz. Ezek nagyon részletesek, és normál körülmények között le kell tiltani őket, különben teljesítményproblémákat okoznak.</string>
+    <!-- Plugin Error Notifications -->
+    <string name="termux_plugin_error_notifications_enabled_title">Bővitmény hiba értesítések</string>
+    <string name="termux_plugin_error_notifications_enabled_off">A villogások és értesítések le vannak tiltva a bővítményhibákról.</string>
+    <string name="termux_plugin_error_notifications_enabled_on">A villogások és értesítések meg vannak jelenítve a bővítményhibákról. (Alapértelmezett)</string>
+    <!-- Crash Report Notifications -->
+    <string name="termux_crash_report_notifications_enabled_title">Összeomlási Jelentési Értesítések</string>
+    <string name="termux_crash_report_notifications_enabled_off">Az összeomlási jelentésekről szóló értesítések le vannak tiltva.</string>
+    <string name="termux_crash_report_notifications_enabled_on">Az összeomlási jelentésekről szóló értesítések meg vannak jelenítve. (Alapértelmezett)</string>
+    <!-- Terminal IO Preferences -->
+    <string name="termux_terminal_io_preferences_title">Terminál I/O</string>
+    <string name="termux_terminal_io_preferences_summary">Terminál I/O beállítások</string>
+    <!-- Keyboard Category -->
+    <string name="termux_keyboard_header">Billentyűzet</string>
+    <!-- Soft Keyboard -->
+    <string name="termux_soft_keyboard_enabled_title">Szoftveres Billentyűzet Engedélyezése</string>
+    <string name="termux_soft_keyboard_enabled_off">Szoftveres billentyűzet letiltva.</string>
+    <string name="termux_soft_keyboard_enabled_on">Szoftveres billentyűzet engedélyezve. (Alapértelmezett)</string>
+    <!-- Soft Keyboard Only If No Hardware-->
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_title">Szoftveres Billentyűzet Ha Nincs Hardveres</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_off">A szoftveres billentyűzet akkor is engedélyezve lesz, ha hardver billentyűzet
+                    csatlakoztatva van. (Alapértelmezett)</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_on">A szoftveres billentyűzet csak akkor lesz engedélyezve,
+                    ha nincs csatlakoztatva hardver billentyűzet.</string>
+    <!-- Terminal View Preferences -->
+    <string name="termux_terminal_view_preferences_title">Terminálnézet</string>
+    <string name="termux_terminal_view_preferences_summary">A terminálnézet beállításai</string>
+    <!-- View Category -->
+    <string name="termux_terminal_view_view_header">Megtekintés</string>
+    <!-- Terminal View Margin Adjustment -->
+    <string name="termux_terminal_view_terminal_margin_adjustment_title">Terminál margóbeállítás</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_off">A terminál margóbeállítása le lesz tiltva.</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_on">A terminál margóbeállítása engedélyezve lesz. Engedélyezni kell, hogy megpróbálja
+                    megoldani azt a problémát, hogy a lágy billentyűzet lefedi az extra billentyűk / terminálnézet egy részét. Ha ez a képernyő villogását okozza az
+                    eszközökön, akkor tiltsa le. (Alapértelmezett)</string>
+    <!-- Termux:API App Preferences -->
+    <string name="termux_api_preferences_title">&TERMUX_API_APP_NAME;</string>
+    <string name="termux_api_preferences_summary">Beállítások ehhez: &TERMUX_API_APP_NAME;</string>
+    <!-- Termux:Float App Preferences -->
+    <string name="termux_float_preferences_title">&TERMUX_FLOAT_APP_NAME;</string>
+    <string name="termux_float_preferences_summary">Beállítások ehhez: &TERMUX_FLOAT_APP_NAME;</string>
+    <!-- Termux:Tasker App Preferences -->
+    <string name="termux_tasker_preferences_title">&TERMUX_TASKER_APP_NAME;</string>
+    <string name="termux_tasker_preferences_summary">Beállítások ehhez: &TERMUX_TASKER_APP_NAME;</string>
+    <!-- Termux:Widget App Preferences -->
+    <string name="termux_widget_preferences_title">&TERMUX_WIDGET_APP_NAME;</string>
+    <string name="termux_widget_preferences_summary">Beállítások ehhez: &TERMUX_WIDGET_APP_NAME;</string>
+    <!-- About Preference -->
+    <string name="about_preference_title">Névjegy</string>
+    <!-- Donate Preference -->
+    <string name="donate_preference_title">Adományozás</string>
+    <string name="extra_keys_command_hint">Parancs beszúrása…</string>
+    <string name="title_restore_background_image">Háttérkép észlelve. Szeretné visszaállítani\?</string>
+    <string name="error_background_image_loading_from_gallery_failed">Nem sikerült betölteni a képet. Próbálkozzon másik képpel.</string>
+    <string name="termux_style_preferences_summary">&TERMUX_APP_NAME; beállítások és személyre szabás</string>
+    <string name="termux_background_image_enabled_on">Háttérkép engedélyezve.</string>
+    <string name="action_set_background_image">Háttérkép beállítása</string>
+    <string name="action_font_and_color">Betűtípus és Szín</string>
+    <string name="error_background_image_loading_failed">Nem sikerült betölteni a háttérképet. Háttérszín beállítása.</string>
+    <string name="action_remove_background_image">Háttérkép eltávolítása</string>
+    <string name="termux_terminal_view_activity_remove_off">Amint az összes terminál munkamenetet bezárta, &TERMUX_APP_NAME; bezáródik, és látható marad a legutóbbi alkalmazásoknál.</string>
+    <string name="termux_terminal_view_activity_remove_title">A legutóbbi alkalmazások közötti maradás megakadályozása</string>
+    <string name="termux_style_preferences_title">&TERMUX_APP_NAME; Kinézet</string>
+    <string name="termux_background_header">Háttér</string>
+    <string name="termux_terminal_view_activity_remove_on">Amint az összes terminál munkamenetet bezárta, &TERMUX_APP_NAME; bezáródik, és nem marad látható a legutóbbi alkalmazásoknál. (Default)</string>
+    <string name="termux_background_image_enabled_title">Háttérkép megjelenítése</string>
+    <string name="termux_background_image_enabled_off">A háttérkép le van tiltva. Az engedélyezéshez győződjön meg arról, hogy léteznek megfelelő álló és fekvő képek. Új hátteret a kontextusmenüből tud beállítani, amit a Terminálon való hosszú érintéssel tud előhozni. (Alapértelmezett)</string>
+    <string name="termux_monet_background_enabled_title">Monet Háttérkép (Instabil)</string>
+    <string name="termux_monet_background_enabled_off">A Terminal Monet Háttérkép funkció letiltja a terminál háttérképet, és monet stílusúvá teszi (alapértelmett).</string>
+    <string name="termux_monet_background_enabled_on">A Monet Háttérkép engedélyezve lesz</string>
+</resources>

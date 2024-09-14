@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+<!ENTITY TERMUX_PREFIX_DIR_PATH "/data/data/com.termux/files/usr">
+]>
+<resources>
+    <string name="error_get_package_context_failed_message">Nem sikerült lekérni a csomagkörnyezetet a következő csomaghoz: %1$s. Ennek az lehet az oka, hogy az alkalmazáscsomag nincs telepítve, vagy az APK aláírása eltér az aktuális alkalmazástól.</string>
+    <string name="error_get_package_context_failed_help_url_message">További részletekért ellenőrizze a következőt: %1$s.</string>
+    <string name="error_get_component_state_failed">Nem sikerült lekérni a következő összetevő állapotát: %1$s/%2$s</string>
+    <string name="error_enable_component_failed">Nem sikerült engedélyezni a következő összetevőt: %1$s/%2$s</string>
+    <string name="error_has_not_requested_legacy_external_storage">A következő csomag a targetSdkVersion %2$d verziót célozza, és az Android sdk %3$d rendszeren fut, de nem állította „true” értékre a „requestLegacyExternalStorage” tulajdonságot az alkalmazás manifesztjében: %1$s</string>
+    <string name="error_exception_received_while_executing_app_shell_command">A következő alkalmazás shell parancs végrehajtása közben hiba érkezett: %1$s
+\nHiba: %2$s</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">`DUMP` és `PACKAGE_USAGE_STATS` engedély szükséges</string>
+    <string name="msg_directory_absolute_path">%1$s Könyvtár abszolút elérési útja: „%2$s ”</string>
+    <string name="error_get_package_context_failed_title">Nem sikerült lekérni a csomagkörnyezetet</string>
+    <string name="error_app_not_installed_or_disabled_warning">A következő alkalmazás nincs telepítve, vagy le van tiltva: %1$s (%2$s).</string>
+    <string name="error_disable_component_failed">Nem sikerült letiltani a következő összetevőt: %1$s/%2$s</string>
+    <string name="message_sudo_please_grant_permissions">Kérjük, adja meg a kért engedély(eke)t</string>
+    <string name="error_failed_to_request_permissions">Nem sikerült engedélyt kérni a következő kérelemkóddal: %1$d: %2$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">Olyan engedélyeket próbált meg ellenőrizni, amelyeket nem kértek az alkalmazás jegyzékében: %1$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">Olyan engedélyeket próbált meg kérni, amelyeket nem kértek az alkalmazás jegyzékében: %1$s</string>
+    <string name="error_allow_external_apps_ungranted">%1$s számára szükséges, hogy az „allow-external-apps” tulajdonság „true” értékre legyen állítva a következő fájlban: „%2$s”.</string>
+    <string name="title_report_text">Jelentés szövege</string>
+    <string name="title_share_with">Megosztás ezzel</string>
+    <string name="title_open_url_with">URL megnyitása ezzel</string>
+    <string name="msg_storage_permission_not_granted">A tárolási engedély nincs megadva.</string>
+    <string name="error_executable_unset">A végrehajtható fájl nincs beállítva „%1$s” shell parancshoz</string>
+    <string name="error_exception_received_while_executing_termux_session_command">A következő munkameneti parancs végrehajtása közben hiba érkezett: %1$s.
+\nHiba: %2$s</string>
+    <string name="msg_termux_app_required_by_app">%1$s alkalmazásnak szüksége van &TERMUX_APP_NAME;-ra, hogy &TERMUX_APP_NAME; parancsokat futtasson.</string>
+    <string name="error_termux_app_package_context_not_accessible">A következő alkalmazás (csomag kontextus) nem érhető el: &TERMUX_APP_NAME;.</string>
+    <string name="action_no">Nem</string>
+    <string name="action_yes">Igen</string>
+    <string name="action_copy">Másolás</string>
+    <string name="action_share">Megosztás</string>
+    <string name="action_enable_launcher_icon">Indító ikon engedélyezése</string>
+    <string name="msg_enabling_launcher_icon">A következő alkalmazásindító ikonjának engedélyezése: %1$s</string>
+    <string name="msg_disabling_launcher_icon">A következő alkalmazásindító ikonjának letiltása: %1$s</string>
+    <string name="log_level_off">Ki</string>
+    <string name="log_level_normal">Normál</string>
+    <string name="log_level_unknown">*Ismeretlen*</string>
+    <string name="error_display_over_other_apps_permission_not_granted">%1$s igényli a „Megjelenítés más alkalmazások felett” engedélyt a tevékenységek és szolgáltatások háttérből történő indításához Android 10-től. Megadhatja az Android Beállítások -&gt; Alkalmazások -&gt; %1$s -&gt; Megjelenés legfelül. Az engedély neve eltérhet a különböző eszközökön, például a Xiaomi esetében, amelynek neve „Előugró ablakok megjelenítése a háttérben futás közben”, ellenőrizze a https://dontkillmyapp.com webhelyet az eszközspecifikus problémákért.</string>
+    <string name="action_save_to_file">Mentés fájlba</string>
+    <string name="error_termux_prefix_dir_path_not_accessible">&TERMUX_APP_NAME; alkalmazás $PREFIX könyvtára nem érhető el a következő alkalmazás számára: %1$s. Ennek az lehet az oka, hogy, nem telepítette és állította be a &TERMUX_APP_NAME; alkalmazást, vagy a &TERMUX_APP_NAME; és az %1$s alkalmazások eltérő APK-aláírásokkal rendelkeznek, mivel a két alkalmazást különböző forrásból telepítette. Az is lehet, hogy a &TERMUX_APP_NAME; $PREFIX könyvtár „&TERMUX_PREFIX_DIR_PATH;” nem létezik, vagy nincsen olvasási, írási és végrehajtási jogosultságai.</string>
+    <string name="action_cancel">Mégsem</string>
+    <string name="msg_report_issue">Ha be szeretné jelenteni ezt a problémát, akkor másolja ki a szövegét a beállítások menüből (3 pont a jobb felső sarokban), és jelentse be a problémát a következő hivatkozások egyikén.
+\n
+\nHa &TERMUX_APP_NAME; alkalmazás összeomlási jelentést tesz közzé, kérjük, adja meg, hogy mit csinált, ami az összeomlást okozta, és ha lehetséges, hogyan lehet reprodukálni.
+\n
+\nHa problémát tesz közzé a GitHub-on, azon a repository-n nyisson egy issue-t, amelyhez a jelentés tartozik. Azok a megnyitott issue-k vagy email-ek, amelyekben **(részleges) képernyőképeket** tett közzé a teljes jelentés helyett, **automatikusan be lesznek zárva/ki lesznek törölve**. Opcionálisan eltávolíthat minden olyan eszközspecifikus információt, amelyet privátnak tekint, vagy nem szeretne megosztani, vagy amely nem releváns a probléma szempontjából.
+\n
+\nNem nyújtunk támogatást a hackeléssel kapcsolatos eszközökhöz/szkriptekhez. Ha ezekről kérdez minket email-en, GitHub-on, vagy más hivatalos &TERMUX_APP_NAME; közösségi fórumokon, akkor valószínű, hogy **automatikusan bezárjuk/töröljük** ezeket, és akár **ideiglenes vagy végleges** kitiltást is kap érte. Részletekért tekintse meg a következőt: %1$s/wiki/Hacking.</string>
+    <string name="msg_storage_permission_granted_on_request">A felhasználó kérésre megadta a tárolási engedély</string>
+    <string name="msg_storage_permission_not_granted_on_request">A felhasználó kérésre nem adta meg a tárolási engedély</string>
+    <string name="action_disable_launcher_icon">Indító ikon letiltása</string>
+    <string name="log_level_title">Naplózási szint</string>
+    <string name="setting_launcher_icon_enabled_off">Indító ikon letiltva.</string>
+    <string name="setting_launcher_icon_title">Indítóikon Engedélyezése</string>
+    <string name="setting_launcher_icon_enabled_on">Indító ikon engedélyezve. (Alapértelmezett)</string>
+    <string name="log_level_debug">Hibakeresés</string>
+    <string name="log_level_value">Logcat naplózási szintje beállítva a következőre: %1$s</string>
+    <string name="log_level_verbose">Részletes</string>
+    <string name="msg_file_saved_successfully">%1$s fájl sikeresen mentve a következő helyre: %2$s</string>
+    <string name="error_sending_sigkill_to_process">SIGKILL küldése a folyamatnak felhasználói kérésre, vagy azért, mert az android leállítja a végrehajtási szolgáltatást</string>
+    <string name="error_failed_to_execute_termux_session_command">Nem sikerült végrehajtani a következő &TERMUX_APP_NAME; munkamenet parancsot: %1$s</string>
+    <string name="error_execution_cancelled">A végrehajtás megszakadt, mert a végrehajtási szolgáltatás leállt</string>
+    <string name="error_failed_to_execute_app_shell_command">Nem sikerült végrehajtani a következő alkalmazás shell parancsot: %1$s</string>
+    <string name="msg_report_truncated">**Levágott Jelentés**
+\n
+\nA jelentés túl nagy ahhoz, hogy itt megtekinthesse. Használja a „Mentés fájlba” opciót a beállítások menüben (3 pont a jobb felső sarokban), és tekintse meg egy külső szövegszerkesztő alkalmazásban.
+\n
+\n##
+\n
+\n</string>
+    <string name="msg_about_termux_monet">Termux nem hivatalos, módosított változatát használod, amely közösség által készített implementációkat és elvetett/nem tervezett funkciókat tartalmaz. Légy tudatában annak, hogy ez az alkalmazás instabil és nem támogatott a Termux által</string>
+</resources>

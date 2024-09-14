@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.termux"
     android:installLocation="internalOnly"
     android:sharedUserId="${TERMUX_PACKAGE_NAME}"
     android:sharedUserLabel="@string/shared_user_label">
@@ -27,6 +26,8 @@
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -37,19 +38,25 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
 
     <application
         android:name=".app.TermuxApplication"
-        android:allowBackup="false"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
         android:banner="@drawable/banner"
-        android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/application_name"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
+        android:hasFragileUserData="true"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:debuggable="true"
         android:supportsRtl="false"
         android:theme="@style/Theme.TermuxApp.DayNight.DarkActionBar"
-        tools:targetApi="m">
+        tools:targetApi="o">
 
         <activity
             android:name=".app.TermuxActivity"
@@ -59,7 +66,7 @@
             android:launchMode="singleTask"
             android:resizeableActivity="true"
             android:theme="@style/Theme.TermuxActivity.DayNight.NoActionBar"
-            tools:targetApi="n">
+            tools:targetApi="o">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -96,7 +103,7 @@
             android:label="@string/application_name"
             android:parentActivityName=".app.TermuxActivity"
             android:resizeableActivity="true"
-            tools:targetApi="n" />
+            tools:targetApi="o" />
 
         <activity
             android:name=".app.activities.SettingsActivity"
@@ -111,12 +118,12 @@
 
         <activity
             android:name=".app.api.file.FileReceiverActivity"
-            android:excludeFromRecents="true"
+            android:excludeFromRecents="false"
             android:exported="false"
             android:noHistory="true"
             android:resizeableActivity="true"
             android:taskAffinity="${TERMUX_PACKAGE_NAME}.filereceiver"
-            tools:targetApi="n">
+            tools:targetApi="o">
         </activity>
 
         <activity-alias
@@ -139,6 +146,16 @@
                 <data android:mimeType="video/*" />
             </intent-filter>
         </activity-alias>
+
+        <activity android:name="android.app.NativeActivity" android:configChanges="orientation|screenSize">
+            <!-- Tell NativeActivity the name of our .so -->
+            <meta-data android:name="android.app.lib_name" android:value="native-entrypoint"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
 
         <activity-alias
             android:name=".app.api.file.FileViewReceiverActivity"
@@ -197,11 +214,13 @@
 
         <service
             android:name=".app.TermuxService"
+            android:foregroundServiceType="specialUse"
             android:exported="false" />
 
         <service
             android:name=".app.RunCommandService"
             android:exported="true"
+            android:foregroundServiceType="specialUse"
             android:permission="${TERMUX_PACKAGE_NAME}.permission.RUN_COMMAND">
             <intent-filter>
                 <action android:name="${TERMUX_PACKAGE_NAME}.RUN_COMMAND" />
@@ -230,6 +249,10 @@
 
         <meta-data
             android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.lge.support.SPLIT_WINDOW"
             android:value="true" />
 
     </application>

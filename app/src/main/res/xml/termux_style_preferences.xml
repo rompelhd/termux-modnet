@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="background"
+        app:title="@string/termux_background_header">
+
+        <SwitchPreferenceCompat
+            app:key="background_image_enabled"
+            app:summaryOff="@string/termux_background_image_enabled_off"
+            app:summaryOn="@string/termux_background_image_enabled_on"
+            app:title="@string/termux_background_image_enabled_title" />
+            
+        <SwitchPreferenceCompat
+            app:key="monet_background_enabled"
+            app:summaryOff="@string/termux_monet_background_enabled_off"
+            app:summaryOn="@string/termux_monet_background_enabled_on"
+            app:title="@string/termux_monet_background_enabled_title" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        app:key="extrakeys"
+        app:title="@string/termux_extrakeys_header">
+        
+        <SwitchPreferenceCompat
+            app:key="extrakeys_blur_enabled"
+            app:summaryOff="@string/termux_extrakeys_blur_enabled_off"
+            app:summaryOn="@string/termux_extrakeys_blur_enabled_on"
+            app:title="@string/termux_extrakeys_blur_enabled_title" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        app:key="sessions"
+        app:title="@string/termux_sessions_header">
+        
+        <SwitchPreferenceCompat
+            app:key="sessions_blur_enabled"
+            app:summaryOff="@string/termux_sessions_blur_enabled_off"
+            app:summaryOn="@string/termux_sessions_blur_enabled_on"
+            app:title="@string/termux_sessions_blur_enabled_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

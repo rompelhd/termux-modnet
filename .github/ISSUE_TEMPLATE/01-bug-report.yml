@@ -10,7 +10,7 @@ body:
 
         Use search before you open an issue to check whether your issue has been already reported and perhaps solved.
 
-        Android versions 5.x and 6.x are not supported anymore.
+        Android versions lower than 12 are not supported.
 
         If you have issues installing packages then please see https://github.com/termux/termux-packages/issues/6726.
   - type: textarea
@@ -26,7 +26,7 @@ body:
     attributes:
       label: Steps to reproduce the behavior.
       description: |
-        Please post all necessary commands that are needed to reproduce the issue.
+        Please list all necessary commands that are needed to reproduce the issue.
     validations:
       required: true
   - type: textarea
@@ -37,8 +37,10 @@ body:
       label: System information
       description: Please provide info about your device
       value: |
-        * Termux application version:
+        * Termux Monet version:
+        * Is Nightly or Stable?:
         * Android OS version:
         * Device model:
+        *
     validations:
       required: true

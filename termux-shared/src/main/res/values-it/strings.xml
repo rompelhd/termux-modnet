@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_directory_absolute_path">%1$s Percorso assoluto della cartella: \"%2$s\"</string>
+    <string name="error_app_not_installed_or_disabled_warning">L\'applicazione %1$s (%2$s) non è installata o è disabilitata.</string>
+    <string name="action_yes">Sì</string>
+    <string name="action_share">Condividi</string>
+    <string name="action_no">No</string>
+    <string name="action_save_to_file">Salva come file</string>
+    <string name="title_share_with">Condividi con</string>
+    <string name="title_open_url_with">Apri URL con</string>
+    <string name="action_copy">Copia</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="log_level_off">Disabilitato</string>
+    <string name="log_level_title">Livello del log</string>
+    <string name="log_level_verbose">Dettagliato</string>
+    <string name="log_level_normal">Normale</string>
+    <string name="log_level_debug">Debug</string>
+    <string name="log_level_unknown">*Sconosciuto*</string>
+    <string name="error_failed_to_request_permissions">Impossibile richiedere permessi con codice di richiesta %1$d: %2$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">Si è tentato di chiedere permessi che non sono stati richiesti nel manifest dell\'app: %1$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">"Si è tentato di  verificare permessi che non sono stati richiesti nel manifest dell\'app: %1$s"</string>
+    <string name="error_get_package_context_failed_title">Impossibile ottenere il contesto del pacchetto</string>
+    <string name="error_get_package_context_failed_message">Impossibile ottenere il contesto per il pacchetto \"%1$s\". Ciò potrebbe essere dovuto al fatto che il pacchetto dell\'app non è installato o ha una firma APK differente da quella dell\'app corrente.</string>
+    <string name="message_sudo_please_grant_permissions">Per favore concedi le autorizzazioni richieste</string>
+    <string name="error_disable_component_failed">Impossibile disabilitare il componente %1$s/%2$s</string>
+    <string name="error_enable_component_failed">Impossibile abilitare il componente %1$s/%2$s</string>
+    <string name="error_get_component_state_failed">Impossibile ottenere lo stato del componente %1$s/%2$s</string>
+    <string name="error_get_package_context_failed_help_url_message">Controlla %1$s per maggiori dettagli.</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">Necessaria l\'autorizzazione `DUMP` e `PACKAGE_USAGE_STATS`</string>
+    <string name="error_has_not_requested_legacy_external_storage">Il pacchetto \"%1$s\" sta puntando a targetSdkVersion %2$d ed è in esecuzione su android sdk %3$d ma non ha impostato `requestLegacyExternalStorage` su `true` nel manifest dell\'applicazione</string>
+</resources>

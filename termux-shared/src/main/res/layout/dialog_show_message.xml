@@ -12,7 +12,7 @@
         android:paddingTop="16dp"
         android:paddingEnd="24dp"
         android:paddingBottom="16dp">
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/dialog_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
                 android:paddingEnd="24dp"
                 android:paddingBottom="16dp"
                 android:scrollbars="vertical">
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/dialog_message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

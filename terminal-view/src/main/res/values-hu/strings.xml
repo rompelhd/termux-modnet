@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="paste_text">Beillesztés</string>
+    <string name="copy_text">Másolás</string>
+    <string name="text_selection_more">Egyebek…</string>
+</resources>

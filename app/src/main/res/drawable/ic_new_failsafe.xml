@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <path
+        android:fillColor="@color/icon_opposite_accent_bg"
+        android:strokeColor="@color/icon_opposite_accent"
+        android:strokeWidth="4"
+        android:pathData="M9,6 L39,6 Q42,6,42,9 L42,39 Q42,42,39,42 L9,42 Q6,42,6,39 L6,9 Q6,6,9,6" />
+    <path
+        android:fillColor="@color/icon_opposite_accent"
+        android:pathData="M14,14 L19,14 L19,24 L14,24" />
+</vector>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
+<resources>
+    <string name="bootstrap_installer_body">Memasang paket bootstrap…</string>
+    <string name="bootstrap_error_title">Tidak dapat memasang bootstrap</string>
+    <string name="bootstrap_error_abort">Batalkan</string>
+    <string name="bootstrap_error_try_again">Coba lagi</string>
+    <string name="shared_user_label">Pengguna &TERMUX_APP_NAME;</string>
+    <string name="permission_run_command_label">Jalankan perintah di lingkungan &TERMUX_APP_NAME;</string>
+    <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; hanya dapat dijalankan sebagai pengguna utama.
+\nBootstrap biner yang dikompilasi untuk &TERMUX_APP_NAME; memiliki jalur $PREFIX yang telah di-hardcode dan tidak dapat dipasang di bawah jalur apa pun selain:
+\n%1$s.</string>
+    <string name="permission_run_command_description">jalankan perintah arbitrer dalam lingkungan &TERMUX_APP_NAME; dan akses file</string>
+    <string name="bootstrap_error_body">&TERMUX_APP_NAME; tidak dapat memasang paket bootstrap.</string>
+    <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; tidak dapat dipasang pada kartu sd portabel/eksternal/dapat dilepas pada perangkat Anda.
+\nBiner bootstrap yang dikompilasi untuk &TERMUX_APP_NAME; memiliki jalur $PREFIX yang telah di-hardcode dan tidak dapat dipasang di bawah jalur apa pun selain:
+\n%1$s.</string>
+    <string name="action_new_session">Sesi baru</string>
+    <string name="action_rename_session_confirm">Atur</string>
+    <string name="title_create_named_session">Sesi dengan nama baru</string>
+    <string name="action_create_named_session_confirm">Buat</string>
+    <string name="action_share_selected_text">Bagikan teks yang dipilih</string>
+    <string name="title_share_selected_text">Teks Terminal</string>
+    <string name="action_autofill_password">Isi otomatis kata sandi</string>
+    <string name="action_open_help">Bantuan</string>
+    <string name="action_open_settings">Pengaturan</string>
+    <string name="action_report_issue">Laporkan Masalah</string>
+    <string name="msg_generating_report">Membuat Laporan</string>
+    <string name="msg_add_termux_debug_info">Tambahkan info debug &TERMUX_APP_NAME; untuk dilaporkan\?</string>
+    <string name="action_styling_install">Pasang</string>
+    <string name="error_termux_service_invalid_execution_command_runner">Perintah eksekusi tidak valid yang dijalankan ke TermuxService: `%1$s`</string>
+    <string name="action_new_session_failsafe">Failsafe</string>
+    <string name="title_max_terminals_reached">Terminal maksimum tercapai</string>
+    <string name="msg_max_terminals_reached">Tutup yang sudah ada sebelum membuat yang baru.</string>
+    <string name="action_toggle_soft_keyboard">Papan Ketik</string>
+    <string name="title_rename_session">Atur nama sesi</string>
+    <string name="msg_enabling_terminal_toolbar">Mengaktifkan Bilah Alat Terminal</string>
+    <string name="msg_disabling_terminal_toolbar">Menonaktifkan Bilah Alat Terminal</string>
+    <string name="extra_keys_command_hint">Sisipkan perintah…</string>
+    <string name="action_select_url">Pilih URL</string>
+    <string name="title_select_url_none_found">Tidak ada URL yang ditemukan di terminal.</string>
+    <string name="title_select_url_dialog">Klik URL untuk menyalin atau tekan lama untuk membuka</string>
+    <string name="msg_select_url_copied_to_clipboard">URL disalin ke papan klip</string>
+    <string name="action_share_transcript">Bagikan transkrip</string>
+    <string name="title_share_selected_text_with">Kirim teks yang dipilih ke:</string>
+    <string name="title_share_transcript">Transkrip terminal</string>
+    <string name="title_share_transcript_with">Kirim transkrip ke:</string>
+    <string name="action_reset_terminal">Atur ulang</string>
+    <string name="error_styling_not_installed">Aplikasi Plugin &TERMUX_STYLING_APP_NAME; tidak dipasang.</string>
+    <string name="msg_terminal_reset">Atur ulang terminal</string>
+    <string name="notification_action_exit">Keluar</string>
+    <string name="action_kill_process">Bunuh proses (%d)</string>
+    <string name="title_confirm_kill_process">Benar-benar ingin mematikan sesi ini\?</string>
+    <string name="action_style_terminal">Gaya</string>
+    <string name="action_font_and_color">Huruf dan Warna</string>
+    <string name="action_set_background_image">Atur gambar latar belakang</string>
+    <string name="action_remove_background_image">Hapus gambar latar belakang</string>
+    <string name="action_toggle_keep_screen_on">Biarkan layar tetap menyala</string>
+    <string name="notification_action_wake_lock">Dapatkan wakelock</string>
+    <string name="notification_action_wake_unlock">Lepaskan wakelock</string>
+    <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME; memerlukan perizinan \"Tampilkan di atas aplikasi lain\" untuk memulai sesi terminal dari latar belakang di Android &gt;= 10. Berikan izin dari Pengaturan -&gt; Aplikasi -&gt; &TERMUX_APP_NAME; -&gt; Lanjutan</string>
+    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Mode pembuatan shell perintah eksekusi yang tidak didukung untuk TermuxService: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_runner">Pelaksana perintah eksekusi yang tidak didukung untuk TermuxService: `%1$s`</string>
+    <string name="error_termux_service_execution_command_shell_name_unset">Nama shell tidak disetel tetapi mode pembuatan shell `%1$s` diteruskan</string>
+    <string name="error_run_command_service_invalid_intent_action">Tindakan maksud yang tidak valid untuk RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_invalid_execution_command_runner">Perintah eksekusi tidak valid untuk menjalankan RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_mandatory_extra_missing">Tambahan wajib yang tidak ada pada RunCommandService: \"%1$s\"</string>
+    <string name="error_run_command_service_api_help">Kunjungi %1$s untuk info lebih lanjut tentang penggunaan RUN_COMMAND Intent.</string>
+    <string name="title_file_received">Simpan file di ~/downloads/</string>
+    <string name="action_file_received_edit">Mengedit</string>
+    <string name="termux_debugging_preferences_title">Debug</string>
+    <string name="termux_debugging_preferences_summary">Preferensi untuk debugging</string>
+    <string name="termux_logging_header">Daftar Log</string>
+    <string name="termux_plugin_error_notifications_enabled_title">Notifikasi Kesalahan Plugin</string>
+    <string name="termux_crash_report_notifications_enabled_title">Notifikasi Laporan Kerusakan</string>
+    <string name="termux_crash_report_notifications_enabled_off">Nonaktifkan notifikasi untuk laporan kerusakan.</string>
+    <string name="termux_crash_report_notifications_enabled_on">Menampilkan pemberitahuan untuk laporan kerusakan. (Default)</string>
+    <string name="termux_keyboard_header">Papan Ketik</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_off">Soft Keyboard akan tetap aktif meski hardware keyboard tersambung. (Default)</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_on">Soft Keyboard akan tetap aktif meski hardware keyboard tidak tersambung.</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_title">Menyesuaikan Margin Terminal</string>
+    <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; akan menutup dan menghapus sendiri dari aplikasi terbaru jika tidak ada sesi terminal yang aktif. (Default)</string>
+    <string name="termux_style_preferences_title">Tampilan &TERMUX_APP_NAME;</string>
+    <string name="termux_float_preferences_summary">Preferensi untuk app &TERMUX_FLOAT_APP_NAME;</string>
+    <string name="termux_tasker_preferences_summary">Preferensi untuk app &TERMUX_TASKER_APP_NAME;</string>
+    <string name="action_file_received_open_directory">Buka direktori</string>
+    <string name="title_restore_background_image">Gambar latar belakang terdeteksi. Apakah Anda ingin memulihkannya\?</string>
+    <string name="error_background_image_loading_failed">Tidak dapat memuat gambar latar belakang. Mengatur warna latar belakang.</string>
+    <string name="error_background_image_loading_from_gallery_failed">Gagal memuat gambar. Coba gambar lain.</string>
+    <string name="error_termux_service_start_failed_general">Gagal memulai TermuxService. Periksa logcat untuk pesan pengecualian.</string>
+    <string name="error_termux_service_start_failed_bg">Gagal memulai TermuxService saat aplikasi berada di latar belakang karena pembatasan latar belakang Android.</string>
+    <string name="title_activity_termux_settings">Pengaturan &TERMUX_APP_NAME;</string>
+    <string name="termux_preferences_summary">Preferensi untuk app &TERMUX_APP_NAME;</string>
+    <string name="termux_terminal_view_key_logging_enabled_off">Log tidak akan memiliki entri untuk tombol tampilan terminal. (Default)</string>
+    <string name="termux_log_level_title">Tingkat Log</string>
+    <string name="termux_terminal_view_key_logging_enabled_title">Terminal Tampilkan Key Logging</string>
+    <string name="termux_terminal_view_key_logging_enabled_on">Log Logcat akan memiliki entri untuk kunci tampilan terminal. Ini terlalu panjang lebar dan harus dinonaktifkan dalam keadaan normal atau akan menyebabkan masalah kinerja.</string>
+    <string name="termux_plugin_error_notifications_enabled_on">Menampilkan lampu flash dan notifikasi untuk kesalahan plugin. (Default)</string>
+    <string name="termux_plugin_error_notifications_enabled_off">Nonaktifkan lampu flash dan notifikasi untuk kesalahan plugin.</string>
+    <string name="termux_terminal_io_preferences_title">Terminal I/O</string>
+    <string name="termux_terminal_io_preferences_summary">Preferensi terminal I/O</string>
+    <string name="termux_soft_keyboard_enabled_title">Keyboard Perangkat lunak Diaktifkan</string>
+    <string name="termux_soft_keyboard_enabled_on">Keyboard Perangkat lunak Diaktifkan. (Default)</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_title">Hanya Soft Keyboard Jika Tidak Ada Hardware</string>
+    <string name="termux_terminal_view_preferences_title">Tampilan Terminal</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_off">Menyesuaikan margin Terminal dinonaktifkan.</string>
+    <string name="termux_terminal_view_preferences_summary">Preferensi Tampilan Teminal</string>
+    <string name="termux_terminal_view_view_header">Tampilan</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_on">Penyesuaian margin terminal akan diaktifkan. Ini harus diaktifkan untuk mencoba memperbaiki masalah di mana soft keyboard menutupi sebagian tombol tambahan/tampilan terminal. Jika hal ini menyebabkan layar berkedip pada perangkat Anda, nonaktifkan. (Default)</string>
+    <string name="termux_terminal_view_activity_remove_title">Mencegah agar tetap berada di aplikasi terbaru</string>
+    <string name="termux_terminal_view_activity_remove_off">Setelah menutup semua sesi terminal, &TERMUX_APP_NAME; akan ditutup dan tetap terlihat di aplikasi terbaru.</string>
+    <string name="termux_api_preferences_summary">Preferensi untuk app &TERMUX_API_APP_NAME;</string>
+    <string name="termux_background_image_enabled_title">Tampilan Gambar Latar Belakang</string>
+    <string name="termux_widget_preferences_summary">Preferensi untuk app &TERMUX_WIDGET_APP_NAME;</string>
+    <string name="donate_preference_title">Donasi</string>
+    <string name="termux_background_image_enabled_off">Gambar latar belakang akan dinonaktifkan. Untuk mengaktifkannya, pastikan file potret dan lanskap yang sesuai sudah ada. Jika Anda ingin menetapkan latar belakang baru, tetapkan dari menu konteks dengan klik lama pada Terminal. (Default)</string>
+    <string name="about_preference_title">Tentang</string>
+    <string name="termux_background_header">Latar Belakang</string>
+    <string name="termux_style_preferences_summary">Preferensi untuk tampilan dan kostumisasi &TERMUX_APP_NAME;</string>
+    <string name="termux_background_image_enabled_on">Gambar Latar Belakang akan diaktifkan.</string>
+    <string name="termux_soft_keyboard_enabled_off">Keyboard Perangkat lunak Dinonaktifkan.</string>
+</resources>

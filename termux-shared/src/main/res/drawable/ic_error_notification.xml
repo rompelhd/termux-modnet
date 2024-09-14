@@ -14,7 +14,7 @@
 
         <path
             android:pathData="M5,4H2L8,12L2,20H5L11,12L5,4Z"
-            android:fillColor="#ffffff"/>
+            android:fillColor="@color/opposite_accent"/>
 
         <path
             android:pathData="M19.59,14
@@ -31,7 +31,7 @@
                               L21,15.41
                               L19.59,14
                               z"
-            android:fillColor="#ffffff"/>
+            android:fillColor="@color/opposite_accent"/>
 
     </group>
 </vector>

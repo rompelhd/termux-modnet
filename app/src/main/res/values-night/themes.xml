@@ -12,14 +12,20 @@
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/black</item>
 
-        <item name="android:windowBackground">@color/black</item>
+        <!-- Splash screen background -->
+        <item name="android:windowBackground">@color/background_accent</item>
 
         <!-- Avoid action mode toolbar pushing down terminal content when
              selecting text on pre-6.0 (non-floating toolbar). -->
         <item name="android:windowActionModeOverlay">true</item>
 
+        <!-- Transparent Status Bar and NavigationBar -->
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:navigationBarColor">@color/background_accent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
 
         <!-- https://developer.android.com/training/tv/start/start.html#transition-color -->
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
@@ -27,14 +33,15 @@
 
         <!-- Left drawer. -->
         <item name="buttonBarButtonStyle">@style/TermuxActivity.Drawer.ButtonBarStyle.Dark</item>
-        <item name="termuxActivityDrawerBackground">@color/black</item>
-        <item name="termuxActivityDrawerImageTint">@color/white</item>
+        <item name="termuxActivityDrawerBackground">@color/background_accent</item>
+        <item name="termuxActivityDrawerImageTint">@color/main_accent</item>
 
         <!-- Extra keys colors. -->
-        <item name="extraKeysButtonTextColor">@color/white</item>
-        <item name="extraKeysButtonActiveTextColor">@color/red_400</item>
-        <item name="extraKeysButtonBackgroundColor">@color/black</item>
-        <item name="extraKeysButtonActiveBackgroundColor">@color/grey_500</item>
+        <item name="extraKeysButtonTextColor">@color/main_accent</item>
+        <item name="extraKeysButtonActiveTextColor">@color/opposite_accent</item>
+        <item name="extraKeysButtonBackgroundColor">@color/background_accent</item>
+        <item name="extraKeysButtonActiveBackgroundColor">@color/highlight_accent</item>
+
     </style>
 
 </resources>

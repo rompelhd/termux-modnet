@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="paste_text">Dán</string>
+    <string name="copy_text">Sao chép</string>
+    <string name="text_selection_more">Nhiều hơn…</string>
+    <string name="copied_to_clipboard_text">Màn hình đã được sao chép vào clipboard</string>
+    <string name="a11y_termux_menu_text">Hơn…</string>
+    <string name="a11y_copy_screen_text">Sao chép màn hình</string>
+    <string name="a11y_speak_cursor_position_text">Nói Vị trí con trỏ</string>
+    <string name="a11y_speak_cursor_line_text">Nói Dòng Con Trỏ</string>
+    <string name="a11y_line_text">Đường kẻ</string>
+    <string name="a11y_column_text">Văn bản cột</string>
+</resources>

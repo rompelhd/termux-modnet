@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+<!ENTITY TERMUX_PREFIX_DIR_PATH "/data/data/com.termux/files/usr">
+]>
+<resources>
+    <string name="msg_directory_absolute_path">Повний шлях до каталогу %1$s: \"%2$s\"</string>
+    <string name="error_app_not_installed_or_disabled_warning">Додаток %1$s (%2$s) не встановлено або вимкнено.</string>
+    <string name="error_get_package_context_failed_title">Не вдалося отримати контекст пакету</string>
+    <string name="error_get_package_context_failed_message">Не вдалося отримати контекст пакету для пакету \"%1$s\". Це може бути тому, що пакет додатку не встановлено або відрізняється підпис APK від поточного додатку.</string>
+    <string name="error_get_package_context_failed_help_url_message">Перевірте %1$s для детальної інформації.</string>
+    <string name="error_get_component_state_failed">Не вдалося отримати стан компонента %1$s/%2$s</string>
+    <string name="error_enable_component_failed">Не вдалося увімкнути компонент %1$s/%2$s</string>
+    <string name="error_disable_component_failed">Не вдалося вимкнути компонент %1$s/%2$s</string>
+    <string name="error_failed_to_request_permissions">Не вдалося запросити дозволи з кодом запиту %1$d: %2$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">Спроба запиту дозволів, які не було запитано у маніфесті додатку: %1$s</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">Потрібні дозволи `DUMP` та `PACKAGE_USAGE_STATS`</string>
+    <string name="error_allow_external_apps_ungranted">%1$s потребує властивість `allow-external-apps` встановлену на `true` у файлі `%2$s`.</string>
+    <string name="title_report_text">Текст звіту</string>
+    <string name="title_share_with">Поділитися з</string>
+    <string name="title_open_url_with">Відкрити URL в</string>
+    <string name="msg_storage_permission_not_granted">Дозвіл на зберігання не надано.</string>
+    <string name="msg_file_saved_successfully">Файл %1$s успішно збережено до \"%2$s\"</string>
+    <string name="error_executable_unset">Для виконуваної команди shell не встановлено \"%1$s\"</string>
+    <string name="error_failed_to_execute_app_shell_command">Не вдалося виконати команду shell \"%1$s\"</string>
+    <string name="error_exception_received_while_executing_app_shell_command">Виняток, отриманий під час виконання команди shell \"%1$s\".
+\nВиняток: %2$s</string>
+    <string name="msg_termux_app_required_by_app">&TERMUX_APP_NAME;-у потрібно запустити команди &TERMUX_APP_NAME; додатком %1$s.</string>
+    <string name="error_termux_app_package_context_not_accessible">Додаток &TERMUX_APP_NAME; (в контексті пакету) недоступний.</string>
+    <string name="action_disable_launcher_icon">Вимкнути іконку запуску</string>
+    <string name="msg_disabling_launcher_icon">Вимкнення іконки запуску додатку %1$s</string>
+    <string name="setting_launcher_icon_enabled_off">Іконку запуску буде вимкнено.</string>
+    <string name="setting_launcher_icon_title">Увімкнення іконки запуску</string>
+    <string name="setting_launcher_icon_enabled_on">Іконку запуску буде увімкнено. (Типово)</string>
+    <string name="log_level_title">Рівень логу</string>
+    <string name="log_level_off">Вимк</string>
+    <string name="log_level_normal">Нормальний</string>
+    <string name="log_level_debug">Налагодження</string>
+    <string name="log_level_verbose">Багатослівний</string>
+    <string name="log_level_unknown">*Невідомо*</string>
+    <string name="log_level_value">Рівень логу Logcat \"%1$s\"</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">Спроба перевірки дозволів, які не було запитано в маніфесті додатку: %1$s</string>
+    <string name="error_has_not_requested_legacy_external_storage">Пакет \"%1$s\" націлений на targetSdkVersion %2$d і запускається на android sdk %3$d, але не встановлено requestLegacyExternalStorage на true у маніфесті додатку</string>
+    <string name="message_sudo_please_grant_permissions">Будь ласка, надайте запитуваний дозвіл(и)</string>
+    <string name="error_display_over_other_apps_permission_not_granted">%1$s потребує дозволу \"Показувати поверх інших додатків\", щоб запускати активності та сервіси з фону на Android &gt;= 10. Надайте з Налаштування Android -&gt; Додатки -&gt; %1$s -&gt; Розширені -&gt; Показувати поверх інших додатків. Назва дозволу може відрізнятися на різних пристроях, наприклад, на Xiaomi він називається \"Показувати спливаючі вікна під час роботи у фоні\", перевірте https://dontkillmyapp.com на предмет специфічних для пристрою проблем.</string>
+    <string name="msg_report_truncated">**Скорочений звіт**
+\n
+\nЗвіт занадто великий для перегляду тут. Скористайтеся опцією \"Зберегти у файл\" з меню опцій (3 крапки вверху праворуч) і перегляньте його у зовнішньому текстовому редакторі.
+\n
+\n##
+\n
+\n</string>
+    <string name="error_failed_to_execute_termux_session_command">Не вдалося виконати команду \"%1$s\" сеансу &TERMUX_APP_NAME;</string>
+    <string name="error_sending_sigkill_to_process">Надсилається SIGKILL на процес за запитом користувача або через те, що андроїд завершує сервіс виконання</string>
+    <string name="error_execution_cancelled">Виконання скасовано оскільки сервіс виконання завершився</string>
+    <string name="error_exception_received_while_executing_termux_session_command">Виняток, отриманий під час виконання команди \"%1$s\" сеансу &TERMUX_APP_NAME;.
+\nВиняток: %2$s</string>
+    <string name="msg_report_issue">Якщо ви хочете повідомити про проблему, скопіюйте текст з меню опцій (3 крапки вверху праворуч) і опублікуйте проблему за одним з наступних посилань.
+\n
+\nЯкщо ви публікуєте звіт про збій програми &TERMUX_APP_NAME;, будь ласка, надайте детальну інформацію про те, що ви робили, що спричинило збій, і як його відтворити, якщо це можливо.
+\n
+\nЯкщо ви публікуєте проблему на GitHub, то публікуйте її в тому репозиторії, якому належить звіт. Проблеми, відкриті або надіслані з **(частковими) скріншотами** замість скопійованого тексту або файлу цього звіту, **ймовірно, будуть автоматично закриті/видалені**. За бажанням ви можете видалити будь-яку інформацію про пристрій, яку ви вважаєте приватною, не хочете поширювати або яка не має відношення до проблеми.
+\n
+\nМи не надаємо підтримку для будь-яких інструментів/скриптів, пов\'язаних зі зломом. Будь-які питання, задані про них електронною поштою, на GitHub або інших офіційних форумах &TERMUX_APP_NAME;, швидше за все, будуть автоматично закриті/видалені** і навіть можуть призвести до **тимчасового або постійного** бану. Перевірте %1$s/wiki/Взлом для деталей.</string>
+    <string name="action_yes">Так</string>
+    <string name="error_termux_prefix_dir_path_not_accessible">$PREFIX каталог додатку &TERMUX_APP_NAME; недоступний через додаток %1$s. Це може бути пов\'язано з тим, що ви не встановили чи не налаштували додаток &TERMUX_APP_NAME; або додаток &TERMUX_APP_NAME; і додаток %1$s мають різні підписи APK, оскільки ви встановили обидва додатки з різних джерел. Це також може бути пов\'язано з тим, що $PREFIX каталог &TERMUX_APP_NAME; \"&TERMUX_PREFIX_DIR_PATH;\" не існує або не має дозволів на читання, запис та виконання.</string>
+    <string name="action_copy">Копіювати</string>
+    <string name="action_no">Ні</string>
+    <string name="action_share">Поділитися</string>
+    <string name="action_cancel">Скасувати</string>
+    <string name="action_save_to_file">Зберегти в файл</string>
+    <string name="msg_storage_permission_granted_on_request">Дозвіл на зберігання надано користувачем на запит</string>
+    <string name="msg_storage_permission_not_granted_on_request">Дозвіл на зберігання не надано користувачем на запит</string>
+    <string name="action_enable_launcher_icon">Увімкнути іконку запуску</string>
+    <string name="msg_enabling_launcher_icon">Увімкнення іконки запуску додатку %1$s</string>
+</resources>

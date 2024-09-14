@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Color: #FFFFFF, White luminance 200, Chroma factor 225, Non accurate shades, Uses linear lightness -->
+<resources>
+    <color name="main_accent">#4a4a4a</color>
+    <color name="highlight_accent">#b7b7b7</color>
+    <color name="opposite_accent">#f44336</color>
+    <color name="background_accent">#ebecec</color>
+    <color name="hint_accent">#989898</color>
+
+    <color name="icon_accent">#353535</color>
+    <color name="icon_accent_bg">#d9d9d9</color>
+
+    <color name="icon_opposite_accent">#f44336</color>
+    <color name="icon_opposite_accent_bg">#500d00</color>
+
+    <color name="icon_neutral_accent">#989898</color>
+    <color name="icon_neutral_accent_bg">#0d0d0d</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
+<resources>
+    <string name="permission_run_command_description">выконваць адвольныя каманды ў асяроддзі &TERMUX_APP_NAME; з доступам да файлаў</string>
+    <string name="shared_user_label">карыстальнік &TERMUX_APP_NAME;</string>
+    <string name="bootstrap_installer_body">Усталёўка пакетаў заладоўкі…</string>
+    <string name="bootstrap_error_title">Не магчыма усталяваць пакеты заладоўкі</string>
+    <string name="bootstrap_error_body">&TERMUX_APP_NAME; не магчыма ўсталяваць пакеты заладоўкі.</string>
+    <string name="bootstrap_error_try_again">Паспрабаваць ізноў</string>
+    <string name="bootstrap_error_abort">Адмяніць</string>
+    <string name="permission_run_command_label">Выконваць каманды у асяроддзі &TERMUX_APP_NAME;</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+     The light themes are only for day mode and must not be defined in night/theme.xml.
+     https://material.io/develop/android/theming/dark
+    -->
+
+    <!--
+      BaseActivity Light DarkActionBar theme.
+      https://github.com/material-components/material-components-android/blob/1.4.0/lib/java/com/google/android/material/theme/res/values/themes.xml#L33
+     -->
+    <style name="Theme.BaseActivity.Light.DarkActionBar" parent="Theme.Material3.DynamicColors.Light">
+        <!--
+         Dialog Themes.
+         These MUST be defined for the application `android:theme` so that if dialogs
+         are shown from non-activity context with TYPE_SYSTEM_ALERT, the correct dialog theme is
+         applied, otherwise exceptions like `UnsupportedOperationException: Failed to resolve attribute
+         at index... TypedValue` will be thrown, since ThemeOverlay would have all the activity
+         theme attributes defined.
+        -->
+        <item name="alertDialogTheme">@style/ThemeOverlay.Material3.Dialog.Alert</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+    </style>
+
+
+
+    <!-- BaseActivity extended classes Day NoActionBar themes. -->
+    <style name="Theme.MarkdownViewActivity.Light" parent="Theme.MediaViewActivity.Light"/>
+
+    <!-- BaseActivity extended classes DayNight NoActionBar themes. -->
+    <style name="Theme.MarkdownViewActivity.DayNight" parent="Theme.MediaViewActivity.DayNight"/>
+
+
+
+
+
+    <!--
+      BaseDialog Light theme.
+      https://github.com/material-components/material-components-android/blob/1.4.0/lib/java/com/google/android/material/dialog/res/values/themes.xml#L70
+     -->
+    <style name="ThemeOverlay.BaseDialog.Light" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+
+        <!-- Dialog title panel style. -->
+        <item name="materialAlertDialogTitlePanelStyle">@style/BaseDialog.Title.Panel</item>
+
+        <!-- Dialog message text style. -->
+        <item name="materialAlertDialogBodyTextStyle">@style/BaseDialog.Message.Text.Dark</item>
+    </style>
+
+    <!-- BaseDialog extended classes DayNight themes. -->
+    <style name="ThemeOverlay.MessageDialog.DayNight" parent="ThemeOverlay.Material3.MaterialAlertDialog"/>
+
+</resources>

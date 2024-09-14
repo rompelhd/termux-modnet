@@ -8,7 +8,8 @@
     android:gravity="center_vertical"
     android:orientation="vertical">
 
-    <TextView android:id="@android:id/title"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@android:id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"

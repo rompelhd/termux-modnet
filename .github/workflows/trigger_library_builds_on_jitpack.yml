@@ -1,9 +1,11 @@
 name: Trigger Termux Library Builds on Jitpack
 
 on:
-  release:
-    types:
-      - published
+  workflow_dispatch
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   trigger-termux-library-builds:
@@ -16,6 +18,6 @@ jobs:
       - name: Trigger termux library builds on jitpack
         run: |
           sleep 180 # It will take some time for the new tag to be detected by Jitpack
-          curl --max-time 600 --no-progress-meter "https://jitpack.io/com/termux/termux-app/terminal-emulator/$TERMUX_LIB_VERSION/terminal-emulator-$TERMUX_LIB_VERSION.pom"
-          curl --max-time 600 --no-progress-meter "https://jitpack.io/com/termux/termux-app/terminal-view/$TERMUX_LIB_VERSION/terminal-view-$TERMUX_LIB_VERSION.pom"
-          curl --max-time 600 --no-progress-meter "https://jitpack.io/com/termux/termux-app/termux-shared/$TERMUX_LIB_VERSION/termux-shared-$TERMUX_LIB_VERSION.pom"
+          curl --max-time 600 --no-progress-meter "https://jitpack.io/com/github/Termux-Monet/termux-monet/terminal-emulator/$TERMUX_LIB_VERSION/terminal-emulator-$TERMUX_LIB_VERSION.pom"
+          curl --max-time 600 --no-progress-meter "https://jitpack.io/com/github/Termux-Monet/termux-monet/terminal-view/$TERMUX_LIB_VERSION/terminal-view-$TERMUX_LIB_VERSION.pom"
+          curl --max-time 600 --no-progress-meter "https://jitpack.io/com/github/Termux-Monet/termux-monet/termux-shared/$TERMUX_LIB_VERSION/termux-shared-$TERMUX_LIB_VERSION.pom"

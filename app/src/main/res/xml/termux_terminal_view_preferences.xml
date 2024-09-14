@@ -10,6 +10,12 @@
             app:summaryOn="@string/termux_terminal_view_terminal_margin_adjustment_on"
             app:title="@string/termux_terminal_view_terminal_margin_adjustment_title" />
 
+        <SwitchPreferenceCompat
+            app:key="activity_finish_remove_task"
+            app:summaryOff="@string/termux_terminal_view_activity_remove_off"
+            app:summaryOn="@string/termux_terminal_view_activity_remove_on"
+            app:title="@string/termux_terminal_view_activity_remove_title" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

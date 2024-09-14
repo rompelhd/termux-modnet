@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_app_not_installed_or_disabled_warning">L\'application %1$s (%2$s) n\'est pas installée ou est désactivée.</string>
+    <string name="msg_directory_absolute_path">%1$s Chemin absolu du répertoire : \"%2$s\"</string>
+    <string name="error_get_package_context_failed_title">Impossible d\'obtenir le contexte du package</string>
+    <string name="error_get_package_context_failed_help_url_message">Consultez %1$s pour plus de détails.</string>
+</resources>

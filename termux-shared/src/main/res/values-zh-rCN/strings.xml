@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+<!ENTITY TERMUX_PREFIX_DIR_PATH "/data/data/com.termux/files/usr">
+]>
+<resources>
+    <string name="msg_directory_absolute_path">%1$s 目录绝对路径：\"%2$s\"</string>
+    <!-- PackageUtils -->
+    <string name="error_app_not_installed_or_disabled_warning">%1$s (%2$s) 应用未安装或被禁用。</string>
+    <string name="error_get_package_context_failed_title">获取包上下文失败</string>
+    <string name="error_get_package_context_failed_message">无法获取 \"%1$s\" 包的包上下文。
+         这可能是因为应用程序包未安装或与当前应用程序具有不同的 APK 签名。</string>
+    <string name="error_get_package_context_failed_help_url_message">查看 %1$s 了解更多详情。</string>
+    <string name="error_get_component_state_failed">无法获得 %1$s/%2$s 组件状态</string>
+    <string name="error_enable_component_failed">无法启用 %1$s/%2$s 组件</string>
+    <string name="error_disable_component_failed">无法禁用 %1$s/%2$s 组件</string>
+    <!-- PermissionUtils -->
+    <string name="message_sudo_please_grant_permissions">请授予请求的权限</string>
+    <string name="error_failed_to_request_permissions">使用请求代码 %1$d 请求权限失败：%2$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">已尝试检查应用清单中未请求的权限：%1$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">尝试请求未在应用清单中请求的权限：%1$s</string>
+    <string name="error_has_not_requested_legacy_external_storage">\"%1$s\" 包目标API 级别(targetSdkVersion)为 %2$d，并在 Android SDK 版本 %3$d 上运行，但未在应用清单(manifest)中将 requestLegacyExternalStorage 设置为 true</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">需要 `DUMP` 和 `PACKAGE_USAGE_STATS` 权限</string>
+    <string name="error_display_over_other_apps_permission_not_granted">%1$s 需要“显示在其他应用的上层”权限来以从 Android &gt;= 10 后台启动活动和服务。你可以在 Android 设置 -&gt; 应用程序 -&gt; %1$s -&gt; 高级 -&gt; 显示在其他应用的上层 授予此权限。权限名称在不同设备上可能不同，比如在小米上，它叫做“后台弹出界面”。对于不同系统中的具体操作，请查看 https://dontkillmyapp.com 。</string>
+    <!-- TermuxPluginUtils -->
+    <string name="error_allow_external_apps_ungranted">%1$s 需要 文件`%2$s` 中的属性 `allow-external-apps` 设置为 `true`。</string>
+    <!-- ReportActivity -->
+    <string name="title_report_text">报告文本</string>
+    <string name="msg_report_truncated">**报告被截断**\n\n报告太大，无法在此处查看。
+        使用选项菜单中的 `保存到文件` 选项（右上角的 3 个点）并在外部文本编辑器应用程序中查看它。\n\n##\n\n</string>
+    <!-- ShareUtils -->
+    <string name="title_share_with">分享到</string>
+    <string name="title_open_url_with">用…打开网址</string>
+    <string name="msg_storage_permission_not_granted">未授予存储权限。</string>
+    <string name="msg_file_saved_successfully">%1$s 文件成功保存在 \"%2$s\"</string>
+    <!-- Shell -->
+    <string name="error_sending_sigkill_to_process">发送 SIGKILL，原因为 用户要求 或 Android 正在终止该运行中的服务</string>
+    <string name="error_executable_unset">可执行文件未为 shell 命令设置 \"%1$s\" </string>
+    <string name="error_execution_cancelled">由于执行服务被杀死，执行已被取消</string>
+    <string name="error_failed_to_execute_termux_session_command">未能执行 \"%1$s\" &TERMUX_APP_NAME; 会话命令</string>
+    <string name="error_failed_to_execute_app_shell_command">未能执行 \"%1$s\" 应用 shell 命令</string>
+    <string name="error_exception_received_while_executing_termux_session_command">执行 \"%1$s\" &TERMUX_APP_NAME; 会话命令时收到异常。
+\n异常: %2$s</string>
+    <string name="error_exception_received_while_executing_app_shell_command">执行 \"%1$s\" 应用 shell 命令时收到异常。
+\n异常: %2$s</string>
+    <!-- TermuxUtils -->
+    <string name="msg_report_issue">如果您想报告此问题，请从选项菜单（右上角的 3 点）复制其文本，并在以下链接之一发布您的问题。
+\n
+\n如果您要发布 &TERMUX_APP_NAME; 应用程序崩溃报告，请提供有关您正在执行的操作的详细信息（即是什么导致了崩溃）以及如何重现它，如果可能的话。
+\n
+\n如果您在 GitHub 上发布 issue，请将其发布到报告所属的存储库中。如果发布 issue 或发送电子邮件时仅带有**（部分）屏幕截图**，而没有复制的文本或此报告文件，您提交的报告**可能会被自动关闭或删除**。 您可以选择删除任何与设备本身相关的信息，如果：您认为它们属于隐私/不想分享/设备信息与问题无关。
+\n
+\n我们不为任何与黑客行为相关的工具/脚本提供支持。 经由电子邮件、在 GitHub 或其他官方 &TERMUX_APP_NAME; 社区论坛提出的问题**可能会被自动关闭或删除**甚至可能导致您被**临时或永久**封禁。 查看 %1$s/wiki/Hacking 了解详情。</string>
+    <string name="msg_termux_app_required_by_app">为了运行 &TERMUX_APP_NAME; 命令，您需要 &TERMUX_APP_NAME; %1$s 应用。</string>
+    <string name="error_termux_app_package_context_not_accessible">&TERMUX_APP_NAME; 应用（包上下文）不可访问。</string>
+    <string name="error_termux_prefix_dir_path_not_accessible">%1$s 应用无法访问 &TERMUX_APP_NAME; 的 $PREFIX 目录。 这可能是因为您没有安装或配置好 &TERMUX_APP_NAME; 或 &TERMUX_APP_NAME; 应用与 %1$s 应用的 APK 签名不同，因为您从不同的来源安装了这两个应用程序。 也可能是因为 &TERMUX_APP_NAME; 的 $PREFIX 目录\"&TERMUX_PREFIX_DIR_PATH;\" 不存在或没有读取， 写入和执行权限。</string>
+    <!-- Miscellaneous -->
+    <string name="action_yes">是</string>
+    <string name="action_no">否</string>
+    <string name="action_copy">复制</string>
+    <string name="action_share">分享</string>
+    <string name="action_cancel">返回</string>
+    <string name="action_save_to_file">保存到文件</string>
+    <string name="msg_storage_permission_granted_on_request">用户根据请求授予存储权限</string>
+    <string name="msg_storage_permission_not_granted_on_request">用户未根据请求授予存储权限</string>
+    <!-- Launcher Icons -->
+    <string name="action_enable_launcher_icon">启用启动器图标</string>
+    <string name="action_disable_launcher_icon">禁用启动器图标</string>
+    <string name="msg_enabling_launcher_icon">启用 %1$s 应用启动器图标</string>
+    <string name="msg_disabling_launcher_icon">禁用 %1$s 应用启动器图标</string>
+    <string name="setting_launcher_icon_title">启用启动器图标</string>
+    <string name="setting_launcher_icon_enabled_off">启动器图标将被禁用。</string>
+    <string name="setting_launcher_icon_enabled_on">启动器图标将被启用。（默认）</string>
+    <!-- Log Level -->
+    <string name="log_level_title">日志级别</string>
+    <string name="log_level_off">离开</string>
+    <string name="log_level_normal">普通</string>
+    <string name="log_level_debug">调试</string>
+    <string name="log_level_verbose">详细</string>
+    <string name="log_level_unknown">*未知*</string>
+    <string name="log_level_value">Logcat 日志级别已设置为 \"%1$s\"</string>
+</resources>

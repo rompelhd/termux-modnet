@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_get_package_context_failed_title">パッケージ内容を取得できませんでした</string>
+    <string name="error_get_component_state_failed">%1$s/%2$s コンポーネントの状況を取得できませんでした</string>
+    <string name="message_sudo_please_grant_permissions">表示された必要な権限を取得してください</string>
+    <string name="error_app_not_installed_or_disabled_warning">%1$s (%2$s) アプリはインストールされていないか無効化されています。</string>
+    <string name="error_get_package_context_failed_message">\"%1$s\" パッケージ内容を取得できませんでした。これはアプリパッケージがインストールされていないか、現在のアプリと異なるAPK signatureで署名されている場合に発生します。</string>
+    <string name="error_get_package_context_failed_help_url_message">詳細は %1$s を参照してください。</string>
+    <string name="error_enable_component_failed">%1$s/%2$s コンポーネントを有効化できませんでした</string>
+    <string name="error_disable_component_failed">%1$s/%2$s コンポーネントを無効化できませんでした</string>
+</resources>

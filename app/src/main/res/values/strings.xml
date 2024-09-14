@@ -2,8 +2,9 @@
 
 <!DOCTYPE resources [
     <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
-    <!ENTITY TERMUX_APP_NAME "Termux">
+    <!ENTITY TERMUX_APP_NAME "Termux:Monet">
     <!ENTITY TERMUX_API_APP_NAME "Termux:API">
+    <!ENTITY TERMUX_GUI_APP_NAME "Termux:GUI">
     <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
     <!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
     <!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
@@ -58,6 +59,9 @@
     <string name="msg_disabling_terminal_toolbar">Disabling Terminal Toolbar</string>
 
 
+    <!-- Terminal Extra Keys -->
+    <string name="extra_keys_command_hint">Insert command…</string>
+
 
     <!-- Terminal Popup -->
     <string name="action_select_url">Select URL</string>
@@ -83,13 +87,17 @@
     <string name="title_confirm_kill_process">Really kill this session?</string>
 
     <string name="action_style_terminal">Style</string>
+    <string name="action_font_and_color">Font and Color</string>
+    <string name="action_set_background_image">Set background image</string>
+    <string name="action_remove_background_image">Remove background image</string>
+
     <string name="action_toggle_keep_screen_on">Keep screen on</string>
     <string name="action_open_help">Help</string>
     <string name="action_open_settings">Settings</string>
 
     <string name="action_report_issue">Report Issue</string>
     <string name="msg_generating_report">Generating Report</string>
-    <string name="msg_add_termux_debug_info">Add termux debug info to report?</string>
+    <string name="msg_add_termux_debug_info">Add &TERMUX_APP_NAME; debug info to report?</string>
 
     <string name="error_styling_not_installed">The &TERMUX_STYLING_APP_NAME; Plugin App is not installed.</string>
     <string name="action_styling_install">Install</string>
@@ -129,9 +137,16 @@
 
 
 
+    <!-- Termux Background Manager -->
+    <string name="title_restore_background_image">Background image detected. Do you want to restore it?</string>
+    <string name="error_background_image_loading_failed">Couldn\'t load background image. Setting background color.</string>
+    <string name="error_background_image_loading_from_gallery_failed">Failed to load image. Try another image.</string>
+
+
+
     <!-- Miscellaneous -->
     <string name="error_termux_service_start_failed_general">Failed to start TermuxService. Check logcat for exception message.</string>
-    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android bg restrictions.</string>
+    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android background restrictions.</string>
 
 
 
@@ -203,6 +218,50 @@
                     It should be enabled to try to fix the issue where soft keyboard covers part of extra keys/terminal view.
                     If it causes screen flickering on your devices, then disable it. (Default)</string>
 
+                <!-- Terminal View Activity Remove Task -->
+                <string name="termux_terminal_view_activity_remove_title">Prevent from remaining on recent apps</string>
+                <string name="termux_terminal_view_activity_remove_off">Once closed all terminal sessions, &TERMUX_APP_NAME; will close and remain visible in recent apps.</string>
+                <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; will close and remove itself from recent apps if there are no active terminal sessions. (Default)</string>
+
+
+        <!-- Termux Style Preferences -->
+        <string name="termux_style_preferences_title">&TERMUX_APP_NAME; Appearance</string>
+        <string name="termux_style_preferences_summary">Preferences for &TERMUX_APP_NAME; appearance and customisation</string>
+
+            <!-- Background Category -->
+            <string name="termux_background_header">Background</string>
+
+                <!-- Background Image -->
+                <string name="termux_background_image_enabled_title">Display background image</string>
+                <string name="termux_background_image_enabled_off">Background image will be disabled.
+                    To enable it, make sure that appropriate portrait and landscape files are present.
+                    If you want to set a new background, set it from context menu by long click on Terminal. (Default)</string>
+                <string name="termux_background_image_enabled_on">Background image will be enabled.</string>
+                
+                <!-- Monet Background -->
+                <string name="termux_monet_background_enabled_title">Monet Background (Unstable)</string>
+                <string name="termux_monet_background_enabled_off">Terminal Monet Background will be disabled.
+                    Turns the terminal background into monet (Default)</string>
+                <string name="termux_monet_background_enabled_on">Monet Background will be enabled.</string>
+                
+            <!-- Extra Keys Category -->
+            <string name="termux_extrakeys_header">Extra Keys</string>
+                
+                <!-- Extra Keys Blur -->
+                <string name="termux_extrakeys_blur_enabled_title">Extra Keys Blurred Background</string>
+                <string name="termux_extrakeys_blur_enabled_off">Extra Keys Blurred Background will be disabled.
+                    Adds a transparent and blurred Background to Extra Keys. (May impact performance) (Default)</string>
+                <string name="termux_extrakeys_blur_enabled_on">ExtraKeys Blurred Background will be enabled.</string>
+                
+            <!-- Sessions Category -->
+            <string name="termux_sessions_header">Sessions Menu</string>
+            
+                <!-- Sessions Blur -->
+                <string name="termux_sessions_blur_enabled_title">Sessions Blurred Background</string>
+                <string name="termux_sessions_blur_enabled_off">Sessions Blurred Background will be disabled.
+                    Adds a transparent and blurred Background to Sessions Menu. (May impact performance) (Default)</string>
+                <string name="termux_sessions_blur_enabled_on">Sessions Blurred Background will be enabled.</string>
+
 
 
     <!-- Termux:API App Preferences -->
@@ -220,6 +279,12 @@
     <!-- Termux:Tasker App Preferences -->
     <string name="termux_tasker_preferences_title">&TERMUX_TASKER_APP_NAME;</string>
     <string name="termux_tasker_preferences_summary">Preferences for &TERMUX_TASKER_APP_NAME; app</string>
+
+
+
+    <!-- Termux:GUI App Preferences -->
+    <string name="termux_gui_preferences_title">&TERMUX_GUI_APP_NAME;</string>
+    <string name="termux_gui_preferences_summary">Preferences for &TERMUX_GUI_APP_NAME; app</string>
 
 
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux:Monet">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+<!ENTITY TERMUX_PREFIX_DIR_PATH "/data/data/com.termux/files/usr">
+]>
+<resources>
+    <string name="msg_directory_absolute_path">%1$s Đường dẫn tuyệt đối của thư mục: \"%2$s\"</string>
+    <string name="error_get_package_context_failed_title">Không lấy được bối cảnh gói</string>
+    <string name="error_app_not_installed_or_disabled_warning">Ứng dụng %1$s (%2$s) chưa được cài đặt hoặc bị tắt.</string>
+    <string name="error_get_package_context_failed_help_url_message">Kiểm tra %1$s để biết thêm chi tiết.</string>
+    <string name="error_get_component_state_failed">Không thể lấy trạng thái thành phần %1$s/%2$s</string>
+    <string name="error_enable_component_failed">Không thể bật thành phần %1$s/%2$s</string>
+    <string name="error_disable_component_failed">Không thể tắt thành phần %1$s/%2$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">Đã cố kiểm tra các quyền chưa được yêu cầu trong bảng kê khai ứng dụng: %1$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">Đã cố gắng yêu cầu các quyền chưa được yêu cầu trong bảng kê khai ứng dụng: %1$s</string>
+    <string name="error_allow_external_apps_ungranted">%1$s yêu cầu thuộc tính `allow-external-apps` được đặt thành `true` trong tệp `%2$s`.</string>
+    <string name="title_report_text">Văn bản báo cáo</string>
+    <string name="msg_report_truncated">**Báo cáo bị cắt bớt**
+\n
+\nBáo cáo quá lớn để xem ở đây. Sử dụng tùy chọn `Save To File` từ menu tùy chọn (3 dấu chấm ở trên cùng bên phải) và xem nó trong ứng dụng soạn thảo văn bản bên ngoài.
+\n
+\n##
+\n
+\n</string>
+    <string name="title_open_url_with">Mở URL bằng</string>
+    <string name="title_share_with">Chia sẻ bằng</string>
+    <string name="msg_storage_permission_not_granted">Chưa cấp quyền lưu trữ.</string>
+    <string name="msg_file_saved_successfully">Tệp %1$s được lưu thành công tại \"%2$s\"</string>
+    <string name="error_sending_sigkill_to_process">Gửi SIGKILL để xử lý theo yêu cầu của người dùng hoặc do Android đang tắt dịch vụ thực thi</string>
+    <string name="error_execution_cancelled">Việc thực thi đã bị hủy vì dịch vụ thực thi đang bị dừng</string>
+    <string name="error_failed_to_execute_termux_session_command">Không thể thực thi \"%1$s\" &TERMUX_APP_NAME; phiên lệnh</string>
+    <string name="error_failed_to_execute_app_shell_command">Không thể thực thi lệnh shell ứng dụng \"%1$s\"</string>
+    <string name="error_exception_received_while_executing_termux_session_command">Đã nhận được ngoại lệ khi thực thi \"%1$s\" &TERMUX_APP_NAME; lệnh phiên.
+\nNgoại lệ: %2$s</string>
+    <string name="error_exception_received_while_executing_app_shell_command">Đã nhận được ngoại lệ khi thực thi lệnh shell ứng dụng \"%1$s\".
+\nNgoại lệ: %2$s</string>
+    <string name="action_enable_launcher_icon">Bật biểu tượng trình khởi chạy</string>
+    <string name="msg_termux_app_required_by_app">&TERMUX_APP_NAME; được ứng dụng %1$s yêu cầu để chạy các lệnh &TERMUX_APP_NAME;.</string>
+    <string name="action_yes">Đồng ý</string>
+    <string name="action_no">Từ chối</string>
+    <string name="action_copy">Sao chép</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_save_to_file">Lưu vào</string>
+    <string name="msg_storage_permission_not_granted_on_request">Quyền lưu trữ không được người dùng cấp theo yêu cầu</string>
+    <string name="setting_launcher_icon_title">Đã bật biểu tượng trình khởi chạy</string>
+    <string name="setting_launcher_icon_enabled_off">Biểu tượng Trình khởi chạy sẽ bị tắt.</string>
+    <string name="setting_launcher_icon_enabled_on">Biểu tượng Trình khởi chạy sẽ được bật. (Mặc định)</string>
+    <string name="log_level_title">Mức độ nhật ký</string>
+    <string name="log_level_off">Tắt</string>
+    <string name="log_level_normal">Thường</string>
+    <string name="log_level_debug">Sửa lỗi</string>
+    <string name="log_level_verbose">Dài dòng</string>
+    <string name="error_get_package_context_failed_message">Không thể lấy ngữ cảnh gói cho gói \"%1$s\". Điều này có thể là do gói ứng dụng chưa được cài đặt hoặc gói ứng dụng có chữ ký APK khác với ứng dụng hiện tại.</string>
+    <string name="error_failed_to_request_permissions">Không thể yêu cầu quyền với mã yêu cầu %1$d: %2$s</string>
+    <string name="message_sudo_please_grant_permissions">Vui lòng cấp quyền được yêu cầu</string>
+    <string name="error_has_not_requested_legacy_external_storage">Gói \"%1$s\" đang nhắm mục tiêu targetSdkVersion %2$d và đang chạy trên sdk android %3$d nhưng chưa đặt `requestLegacyExternalStorage` thành `true` trong bảng kê khai ứng dụng</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">Yêu cầu quyền `DUMP` và `PACKAGE_USAGE_STATS`</string>
+    <string name="error_display_over_other_apps_permission_not_granted">%1$s yêu cầu quyền \"Hiển thị trên các ứng dụng khác\" để bắt đầu các hoạt động và dịch vụ từ nền trên Android &gt;= 10. Cấp quyền này từ Cài đặt Android -&gt; Ứng dụng -&gt; %1$s -&gt; Nâng cao -&gt; Vẽ qua các ứng dụng khác. Tên quyền có thể khác nhau trên các thiết bị khác nhau, như trên Xiaomi, được gọi là \"Hiển thị cửa sổ bật lên khi chạy ở chế độ nền\", hãy kiểm tra https://dontkillmyapp.com để biết các sự cố cụ thể của thiết bị.</string>
+    <string name="error_executable_unset">Có thể thực thi không được đặt \"%1$s\" cho lệnh shell</string>
+    <string name="msg_report_issue">Nếu bạn muốn báo cáo vấn đề này, hãy sao chép văn bản của nó từ menu tùy chọn (3 dấu chấm ở trên cùng bên phải) và đăng vấn đề lên một trong các liên kết sau.
+\n
+\nNếu bạn đang đăng &amp;TERMUX_APP_NAME; báo cáo sự cố ứng dụng, thì vui lòng cung cấp chi tiết về những gì bạn đang làm đã gây ra sự cố và cách tái tạo sự cố đó, nếu có thể.
+\n
+\nNếu bạn đăng một vấn đề trên GitHub, hãy đăng vấn đề đó lên kho chứa báo cáo. Các vấn đề đã mở hoặc email được gửi kèm theo **ảnh chụp màn hình (một phần)** thay vì văn bản được sao chép hoặc tệp của báo cáo này **có thể sẽ tự động bị đóng/xóa**. Bạn có thể tùy ý xóa mọi thông tin cụ thể về thiết bị mà bạn cho là riêng tư hoặc không muốn chia sẻ hoặc không liên quan đến vấn đề.
+\n
+\nChúng tôi không cung cấp hỗ trợ cho bất kỳ công cụ/tập lệnh nào liên quan đến hack. Mọi câu hỏi được hỏi về họ qua email, trên GitHub hoặc &amp;TERMUX_APP_NAME chính thức khác; các diễn đàn cộng đồng **có thể sẽ tự động bị đóng/xóa** và thậm chí có thể dẫn đến **lệnh cấm tạm thời hoặc vĩnh viễn**. Kiểm tra %1$s/wiki/Hacking để biết chi tiết.</string>
+    <string name="error_termux_app_package_context_not_accessible">Không thể truy cập ứng dụng &TERMUX_APP_NAME; (bối cảnh gói).</string>
+    <string name="msg_storage_permission_granted_on_request">Quyền lưu trữ do người dùng cấp theo yêu cầu</string>
+    <string name="action_disable_launcher_icon">Tắt biểu tượng Trình khởi chạy</string>
+    <string name="msg_enabling_launcher_icon">Đang bật biểu tượng trình khởi chạy ứng dụng %1$s</string>
+    <string name="error_termux_prefix_dir_path_not_accessible">Thư mục $PREFIX của ứng dụng &TERMUX_APP_NAME; không thể truy cập được bằng ứng dụng %1$s. Điều này có thể là do bạn chưa cài đặt hoặc thiết lập ứng dụng &TERMUX_APP_NAME; hoặc ứng dụng &TERMUX_APP_NAME; và ứng dụng %1$s đều có chữ ký APK khác nhau vì bạn đã quản lý để cài đặt cả hai ứng dụng từ các nguồn khác nhau. Cũng có thể là do thư mục &TERMUX_APP_NAME; $PREFIX \"&TERMUX_PREFIX_DIR_PATH;\" không tồn tại hoặc không có quyền đọc, ghi và thực thi.</string>
+    <string name="msg_disabling_launcher_icon">Đang tắt biểu tượng trình khởi chạy ứng dụng %1$s</string>
+    <string name="log_level_unknown">*Không xác định*</string>
+    <string name="log_level_value">Mức độ nhật ký logcat được đặt thành \"%1$s\"</string>
+    <string name="a11y_special_key_latched_on">Bật,Đã Khoá</string>
+    <string name="a11y_special_key_off">Tắt</string>
+    <string name="a11y_special_key_on">Bật</string>
+    <string name="msg_about_termux_monet">Bạn đang sử dụng một Phiên Bản không chính thức, đã sửa đổi của Termux, với các triển khai do cộng đồng tạo ra và các tính năng bị loại bỏ/không được lên kế hoạch. Xin lưu ý rằng ứng dụng này không ổn định và không được Termux hỗ trợ.</string>
+</resources>

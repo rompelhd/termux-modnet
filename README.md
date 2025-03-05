@@ -287,26 +287,4 @@ Users must post complete report (optionally without sensitive info) when reporti
 - Enable GitHub actions and do any commit to build termux. e.g. upload a placeholder file.
 - Create empty releases. You don't need to manually upload termux apks, GitHub Actions will do all the job for you.
 
-## Special Thanks
-
-- Thanks for [Android Repository](https://t.me/AndroidRepo) and [MódulOS.tk](https://t.me/moduloyappstk) for sharing and supporting the project!
-- Thanks for [Termux](https://github.com/termux/termux-app) for creating this incredible app!
-
-***
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/Termux-Monet/termux-monet/master/art/ic_monet_dark.svg#gh-dark-mode-only" width=50% height=50%>
-<img src="https://raw.githubusercontent.com/Termux-Monet/termux-monet/master/art/ic_monet_light.svg#gh-light-mode-only" width=50% height=50%>
-</p>
-
-<div align="center">
-  <a href="https://github.com/Termux-Monet/termux-monet/releases">
-    <img src="https://img.shields.io/github/downloads/Termux-Monet/termux-monet/total?color=brightgreen&label=Downloads"/>
-  </a>
-  <a href="https://github.com/Termux-Monet/termux-monet/releases">
-    <img src="https://badgen.net/github/assets-dl/Termux-Monet/termux-monet?label=Updates"/>
-  </a>
-  <a href="https://github.com/Termux-Monet/termux-monet/forks?activity_threshold=5y&include=active%2Carchived%2Cinactive&page=1&sort_by=last_updated">
-    <img src="https://img.shields.io/github/forks/Termux-Monet/termux-monet?style=social"/>
-  </a>
 </div>

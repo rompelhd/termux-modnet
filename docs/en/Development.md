@@ -101,31 +101,6 @@ who has special rights and responsibilities for them.
 - Administrators: fornwall
 - Moderators: Auxilus
 
-### F-Droid
-
-- Links:
-
-<https://f-droid.org/packages/com.termux/>
-<https://search.f-droid.org/?q=Termux>
-
-- Purpose: Download Termux and Termux Addons
-
-### Google Play
-
-DEPRECIATED AND UNSUPPORTED
-
-- Link: <https://play.google.com/store/apps/details?id=com.termux>
-- Purpose: Download Termux
-- Administrator:
-  [fornwall](https://play.google.com/store/apps/developer?id=Fredrik+Fornwall)
-
-### [Repositories](https://github.com/orgs/termux/repositories)
-
-#### termux-app
-
-- Link: <https://github.com/termux/termux-app>
-- Purpose: Main app repository
-
 #### termux-packages
 
 - Link: <https://github.com/termux/termux-packages>
